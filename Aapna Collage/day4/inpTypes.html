@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkbox</title>
+  </head>
+
+  <body>
+    <form action="sdf">
+      <input type="checkbox" id="ckbox" />
+      <label for="ckbox">Halwa hai dosto</label>
+      <button>click</button>
+
+      <div>
+        <!-- we write value bec by this we can pass the value or tell what we select -->
+        <input type="radio" name="q" id="rad" value="true" />
+        <label for="rad">True</label>
+        <input type="radio" name="q" id="fal" value="true" />
+        <label for="fal">False</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="sub1" name="q" value="maths" />
+        <label for="sub1">Maths</label>
+        <input type="checkbox" id="sub2" name="q" value="science" />
+        <label for="sub2">Science</label>
+        <input type="checkbox" id="sub3" name="q" value="programming" />
+        <label for="sub3">Programming</label>
+      </div>
+
+      <div>
+        Choose your pizza
+        <select name="q" id="pizza">
+          <option>Select Your Pizza</option>
+          <option value="7Chees" selected>7-Cheese pizza</option>
+          <option value="FHouse">Farm House pizza</option>
+          <option value="tamato">Tamato pizza</option>
+          <option value="corn">Corn pizza</option>
+        </select>
+      </div>
+      <div>
+        <label for="vol">Select your puzza size</label>
+        <input
+          type="range"
+          id="vol"
+          min="0"
+          max="100"
+          step="1"
+          name="vol"
+          value="10"
+        />
+      </div>
+      <div>
+        <label for="ta">Enter your feedback</label> 
+        <textarea name="q" id="ta" cols="30" rows="10" placeholder="What you are thinking?"></textarea>
+        <button>submit</button>
+      </div>
+    </form>
+  </body>
+</html>

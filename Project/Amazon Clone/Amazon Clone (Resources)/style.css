@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar{
+    background: black;
+    height: 60px;
+    /* display: flex; */
+    /* flex: 1; */
+}
+
+footer{
+    
+}
+
+#amazon-logo{
+    /* display: inline; */
+}
+.navbar-icons{
+    /* color: white; */
+}

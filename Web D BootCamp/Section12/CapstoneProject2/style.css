@@ -1,0 +1,73 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 20px solid #AAC4FF;
+    background: #EEF1FF;
+}
+.container{
+    border-radius: 10px;
+}
+
+/* #page{
+    display: flex;
+    justify-content: center;
+
+} */
+.tusharImg > img{
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.about>.hero>.about-me>p{
+    width: 800px;
+}
+.about{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.skills>.my-skills>div>p{
+    width: 800px;
+}
+/* projects */
+.projects-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tin-ss{
+    float: left;  
+}
+.move-img{
+    float: right;
+}
+.mod-img{
+    float: left;
+}
+/* .projects>.projects-container>.siz-img>.all-img{
+    height: 300px;
+} */
+/* .all-img{
+    height: 100px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
