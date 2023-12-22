@@ -1,0 +1,21 @@
+*{
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+h1 {
+    color: #1b74e4;
+}
+#sear {
+    background-color: black;
+    color: white;
+}
+.regis {
+    background-color: aqua;
+}
+#myId p {
+    color: green;
+}
+/* psedu classes */
+button:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,3 +1,13 @@
+h1{
+    color: red;
+    background-color: pink;
+}
+p{
+    color: rgb(189, 133, 59);
+}
+button{
+    color: rgb(229, 120, 69);
+}
 body{
-    background-color: black;
+    background-color: rgb(255, 155, 169);
 }

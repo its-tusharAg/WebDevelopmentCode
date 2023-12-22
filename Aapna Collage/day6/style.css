@@ -1,0 +1,43 @@
+p a {
+    color: purple;
+    background-color: yellow;
+}
+nav ul li a{
+    color: blueviolet;
+}
+/* we use child decendance only for just one below like span and button */
+span > button {
+    color: blue;
+}
+
+input[type="text"] {
+    color: green;
+}
+input[type="password"]{
+    color: red;
+}
+
+/* for more attributes go to MDN attributes selectors  */
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+h3{
+    text-decoration: underline;
+}
+h3:hover {
+    text-decoration: dotted underline 3px;
+}
+/* active means click */
+h3:active {
+    color: aqua;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+div:nth-of-type(3){
+    background-color: blanchedalmond;
+}

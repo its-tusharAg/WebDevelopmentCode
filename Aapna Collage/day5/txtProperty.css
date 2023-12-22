@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    text-decoration: green wavy underline;
+    letter-spacing: 10px;
+    font-family: Papyrus;
+}
+h2{
+    text-align: center;
+    width: 50%;
+}
+p{
+    text-align: justify;
+    width: 50%;
+    /* text-align: center; */
+    font-weight: 999;
+    text-decoration: dotted line-through;
+    line-height: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
