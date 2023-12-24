@@ -1,16 +1,51 @@
-div {
+/* div {
     height: 150px;
     width: 300px;
     background-color: bisque;
-    border: 4px solid pink;
+    border: 4px solid pink; */
     /* border-right: 4px dashed hotpink;
     border-left: 4px dotted black; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    /* margin-bottom: 20px; */
+    /* margin: 10px 20px 30px;
 }
 h1 {
     border: 2px dotted green;
-}
-button {
+} */
+/* button {
     border: 3px solid black;
-    border-radius: 20px;
+    border-radius: 22px; */
+    /* padding-right: 25px; */
+    /* padding-left: 25px; */
+    /* padding: 0px 25px;
+} */
+
+/* h2 {
+    display: inline;
+}
+span {
+    display: block;
+} */
+
+.inlineBlock {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    margin: 10px;
+}
+#outerBox {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: lightpink;
+    margin: 20px;
+}
+#innerBox {
+    height: 33%;
+    width: 33%;
+    border: 2px solid black;
+    background-color: lightskyblue;
+    margin-left: 10%;
 }
