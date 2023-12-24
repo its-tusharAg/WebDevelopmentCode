@@ -1,0 +1,16 @@
+div {
+    height: 150px;
+    width: 300px;
+    background-color: bisque;
+    border: 4px solid pink;
+    /* border-right: 4px dashed hotpink;
+    border-left: 4px dotted black; */
+    border-radius: 20px;
+}
+h1 {
+    border: 2px dotted green;
+}
+button {
+    border: 3px solid black;
+    border-radius: 20px;
+}
