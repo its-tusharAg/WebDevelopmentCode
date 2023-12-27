@@ -1,0 +1,25 @@
+div {
+    height: 200px;
+    width: 200px;
+    /* alpha channel: use to set opacity for color */
+    background-color: rgba(255, 0, 0, 0.9);
+    margin: 0px auto;
+    
+}
+/* opacity: use to set opacity for anything. */
+#newBox {
+    opacity: 0.5;
+}
+
+/* Transition */
+div {
+    transition: margin-top 2s ease-in-out 0.5s;
+    /* transition-duration: 1s;
+    transition-delay: 0.5s; */
+    
+}
+div:hover {
+    margin: 200px auto;
+    background-color: green;
+    border-radius: 50%;
+}
