@@ -1,0 +1,62 @@
+/* card css */
+/* .box {
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0px 2px 8px black;
+    border-radius: 5px;
+}
+img {
+    height: 50%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+div:hover {
+    transition-duration: 1s;
+    box-shadow: 2px 4px 16px black;
+} */
+
+/* smily face */
+
+#container {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #ffa511;
+    box-shadow: 1px 3px 8px black;
+}
+
+.eye {
+    margin: 2px;
+    background-color: black;
+    position: absolute;
+    display: inline-block;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    top: 80px;
+    left: 100px;
+    border-radius: 50%;
+    
+}
+#second {
+    left: 250px;
+}
+
+#smile {
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: brown;
+    border-radius: 0px 0px 40% 40%;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+#container:hover {
+    transition: 1s;
+    box-shadow: 2px 5px 16px black;
+}
