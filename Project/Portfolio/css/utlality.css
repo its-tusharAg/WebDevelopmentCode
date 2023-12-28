@@ -35,3 +35,13 @@
     border-color: var(--primary);
     color: var(--primary);
 }
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--dark); 
+}
+.flex1 {
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
