@@ -1,5 +1,5 @@
 /* card css */
-/* .box {
+.box {
     height: 250px;
     width: 250px;
     border: 2px solid black;
@@ -16,10 +16,10 @@ img {
 div:hover {
     transition-duration: 1s;
     box-shadow: 2px 4px 16px black;
-} */
+}
 
 /* smily face css */
-/* #container {
+#container {
     height: 400px;
     width: 400px;
     border: 2px solid black;
@@ -58,7 +58,7 @@ div:hover {
 #container:hover {
     transition: 1s;
     box-shadow: 2px 5px 16px black;
-} */
+}
 
 /* PDF questions css*/
 #box1 {

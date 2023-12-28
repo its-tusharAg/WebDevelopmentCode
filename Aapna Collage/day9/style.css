@@ -1,0 +1,44 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    /* flex-wrap: wrap; */
+    height: 300px;
+    width: auto;
+    margin: 10px auto;
+    border: 2px solid black;
+}
+.ranCol {
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid black; */
+}
+#red {
+    background-color: #ff0000;
+}
+#orange {
+    background-color: #ff7f00;
+}
+#yellow {
+    background-color: #ffff00;
+}
+#green {
+    background-color: #00ff00;
+    height: 200px;
+    font-size: 3rem;
+}
+#blue {
+    background-color: #0000ff;
+    align-self: flex-end;
+}
+#indigo {
+    background-color: #4b0082;
+}
+#voilet {
+    background-color: #9400d3;
+}
+#container div {
+    /* font-size: 1.5em; */
+    text-align: center;
+    color: white; 
+}
