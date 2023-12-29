@@ -12,7 +12,7 @@
     animation-direction:alternate; */
 
     /* Shorthand property for animation */
-    animation: colorChanger 3s ease-in 0s infinite alternate;
+    animation: colorChanger 10s ease-in 0s infinite alternate;
 }
 
 @keyframes widthChanger {
@@ -43,11 +43,25 @@
 } */
 @keyframes colorChanger {
     0% {
-        background-color: violet;
+        background-color: rgb(230, 148, 230);
     }
 
-    12.5% {
-        background-color: indigo;
+    15% {
+        background-color: rgb(133, 92, 163);
     }
-    
+    30% {
+        background-color: lightblue;
+    }
+    45% {
+        background-color: lightgreen;
+    }
+    60% {
+        background-color: lightyellow;
+    }
+    80% {
+        background-color: rgb(255, 198, 92);
+    }
+    100% {
+        background-color: rgb(254, 90, 90);
+    }
 }

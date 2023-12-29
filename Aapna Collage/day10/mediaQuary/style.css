@@ -1,0 +1,16 @@
+.container {
+    height: 50px;
+    width: 800px;
+    background-color: yellowgreen;
+}
+/* in max width max hone chayea yaa usse kmm and in min, min hone chayea yaa uss sai jaada */
+@media (min-width:400px) and  (max-width:600px){
+    .container {
+        background-color: red;
+    }
+}
+@media (orientation: landscape) {
+    .container {
+        background-color: hotpink;
+    }
+} 
