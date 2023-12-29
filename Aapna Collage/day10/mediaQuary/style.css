@@ -14,3 +14,19 @@
         background-color: hotpink;
     }
 } 
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+.one {
+    position: relative;
+    z-index: 1;
+}
+.two {
+    position: relative;
+    top: -40px;
+    /* z-index: -1; */
+}
