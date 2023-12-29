@@ -1,0 +1,53 @@
+.box {
+    height: 200px;
+    width: 400px;
+    background-color: lightpink;
+    /* animation-name: widthChanger; */
+    /* animation-name: fontSizeChanger; */
+    /* animation-name: colorChanger;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate; */
+
+    /* Shorthand property for animation */
+    animation: colorChanger 3s ease-in 0s infinite alternate;
+}
+
+@keyframes widthChanger {
+    form {
+        width: 400px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes fontSizeChanger {
+
+    /* from {font-size: 2rem;} */
+    to {
+        font-size: 5rem;
+    }
+}
+
+/* @keyframes colorChanger {
+    from {background-color: lightpink;}
+    to {
+        background-color: yellow;
+        font-size: 5rem;
+        width: 200px;
+    }
+} */
+@keyframes colorChanger {
+    0% {
+        background-color: violet;
+    }
+
+    12.5% {
+        background-color: indigo;
+    }
+    
+}
