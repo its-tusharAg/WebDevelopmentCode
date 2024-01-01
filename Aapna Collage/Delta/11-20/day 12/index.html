@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="btn-group">
-    <button class="btn btn-danger">Click me!</button>
-    <button class=" btn btn-primary">Click me!</button>
-    <button class="btn btn-success">Click me!</button>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-danger">Click me!</button>
+            <button class=" btn btn-primary">Click me!</button>
+            <button class="btn btn-success">Click me!</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 bg-success">one</div>
+            <div class="col-md-4 bg-danger">two</div>
+            <div class="col-md-5 bg-primary">three</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 bg-success">one</div>
+            <div class="col-md-6 col-lg-4 bg-danger">two</div>
+            <div class="col-md-6 col-lg-4 bg-primary">three</div>
+        </div>
+        <br>
+        <div class="row align-items-center ">
+            <div class="col bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis
+                molestias sunt quod explicabo, recusandae deserunt harum corrupti fuga facere tenetur consequatur fugiat
+                ullam ipsam itaque perferendis, facilis quidem quasi.
+                Sint, ipsum rem necessitatibus deserunt, voluptates nemo amet voluptate expedita quam incidunt corrupti
+                nihil iusto repellat quas ea magnam quis ab, vitae doloremque? Quas tenetur voluptate, voluptates
+                veritatis unde vel! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, sunt. Exercitationem optio, tenetur illum fuga quam asperiores corrupti pariatur enim ipsa molestias cum commodi ad ut atque. Necessitatibus, tempora quam.</div>
+
+            <div class="col bg-danger align-self-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo
+                distinctio
+                rem aperiam, error esse quas fuga odio sint in ea. Aspernatur, soluta vero. Veniam adipisci repellat
+                magni
+                dignissimos sequi!</div>
+            <div class="col bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quam, officiis
+                placeat laborum quasi blanditiis veritatis quibusdam corporis voluptas optio iste enim cum aspernatur
+                consequatur dignissimos. Fugit magni sit distinctio.</div>
+                
+        </div>
+<br><br>
+        <form action="noAction" class="mb-3">
+            <label for="mail" class="form-label">Email</label>
+            <input type="text" name="mail" id="mail" placeholder="Email" class="form-control">
+        </form>
+
     </div>
-    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
