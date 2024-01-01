@@ -237,3 +237,24 @@ section.services .card-wrapper .card:hover img {
     padding: 0 1rem;
     border-radius: 10%;
 }
+
+/* freelancing portation */
+
+section.freelancer {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 68% 80%, 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p {
+    margin-bottom: 2rem;
+    font-family: 'lato', sans-serif;
+}
+
