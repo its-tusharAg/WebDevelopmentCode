@@ -529,3 +529,28 @@ footer .footer-socials {
 footer .copyright {
     color: var(--ternary);
 }
+
+@media (max-width: 1024px) {
+    header #main-nav {
+        display: none;
+    }
+}
+
+.side-main-wrapper {
+    position: relative;
+}
+
+.hamberger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    
+}
+
+.hamberger img {
+    height: 30px;
+    width: 30px;
+}

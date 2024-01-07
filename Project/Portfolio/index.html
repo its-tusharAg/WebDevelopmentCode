@@ -15,51 +15,65 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="flex itemCenter justify-between">
-                <div class="left flex itemCenter">
-                    <div id="branding">
-                        <img src="./img/logo.svg" alt="logo" />
-                    </div>
-                    <div>
-                        <a href="#">HOME</a>
-                        <a href="#about">ABOUT</a>
-                        <a href="#services">SERVICES</a>
-                        <a href="#work">WORK</a>
-                        <a href="#blog">BLOG</a>
-                    </div>
-                </div>
-                <div class="right flex">
-                    <button class="btn btn-primary">CONTACT</button>
-                </div>
-            </nav>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="./img/icons8-hamberger-50.png" alt="">
+        </button>
 
-            <!-- Adding hero section -->
-
-            <divc class="hero flex itemCenter justify-between">
-                <div class="left flex1 flex justify-center">
-                    <img src="./img/myImg-Without-background.png" alt="Man img" />
-                </div>
-                <div class="right flex1">
-                    <h6>Tushar Agarwal</h6>
-                    <h1>I'm a Creative <span>Designer</span></h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit aliquam facere porquae vero officiis accusamus,
-                        quaerat ut suscipit esse, architecto amet iste mollitia dolore
-                        corrupti soluta fugiat! Consequatur, eveniet?
-                    </p>
-                    <div>
-                        <button class="btn btn-secondary">DOWNLOAD CV</button>
+        <div class="mobile-nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#blog">BLOG</a></li>
+        </div>
+        <header>
+            <div class="container">
+                 <nav id="main-nav" class="flex itemCenter justify-between">
+                    <div class="left flex itemCenter">
+                        <div id="branding">
+                            <img id="home" src="./img/logo.svg" alt="logo" />
+                        </div>
+                        <div>
+                            <a href="#home">HOME</a>
+                            <a href="#about">ABOUT</a>
+                            <a href="#services">SERVICES</a>
+                            <a href="#work">WORK</a>
+                            <a href="#blog">BLOG</a>
+                        </div>
                     </div>
-                </div>
-        </div>
-        </div>
+                    <div class="right flex">
+                        <button class="btn btn-primary">CONTACT</button>
+                    </div>
+                </nav>
+
+                <!-- Adding hero section -->
+
+                <div class="hero flex itemCenter justify-between">
+                    <div class="left flex1 flex justify-center">
+                        <img src="./img/myImg-Without-background.png" alt="Man img" />
+                    </div>
+                    <div  class="right flex1">
+                        <h6>Tushar Agarwal</h6>
+                        <h1>I'm a Creative <span>Designer</span></h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit aliquam facere porquae vero officiis accusamus,
+                            quaerat ut suscipit esse, architecto amet iste mollitia dolore
+                            corrupti soluta fugiat! Consequatur, eveniet?
+                        </p>
+                        <div>
+                            <button class="btn btn-secondary">DOWNLOAD CV</button>
+                        </div>
+                    </div>
+            </div>
+    </div>
     </header>
 
     <!-- Creating about section -->
@@ -221,7 +235,8 @@
     <section id="blog" class="blog">
         <div class="container">
             <h1 class="section-heading"><span>Our</span> Blog</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam voluptate praesentium et mollitia consequatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam voluptate praesentium et mollitia
+                consequatur?</p>
 
             <div class="card-wrapper">
                 <div class="card">
@@ -229,9 +244,12 @@
                         <img src="./img/article-ph-1.png" alt="article">
                     </div>
                     <div class="card-content">
-                        <a href="#"><h1>Lorem ipsum dolor sit.</h1></a>
+                        <a href="#">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        </a>
                         <span>11 June 2003</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis modi libero architect.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis modi libero
+                            architect.</p>
                         <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
@@ -240,9 +258,12 @@
                         <img src="./img/article-ph-1.png" alt="article">
                     </div>
                     <div class="card-content">
-                        <a href="#"><h1>Lorem ipsum dolor sit.</h1></a>
+                        <a href="#">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        </a>
                         <span>11 June 2003</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis modi libero architecto .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis modi libero
+                            architecto .</p>
                         <a href="#">Read More</a>
                     </div>
                 </div>
@@ -251,9 +272,12 @@
                         <img src="./img/article-ph-1.png" alt="article">
                     </div>
                     <div class="card-content">
-                        <a href="#"><h1>Lorem ipsum dolor sit.</h1></a>
+                        <a href="#">
+                            <h1>Lorem ipsum dolor sit.</h1>
+                        </a>
                         <span>11 June 2003</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis modi libero architect.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis modi libero
+                            architect.</p>
                         <a href="#">Read More</a>
                     </div>
                 </div>
@@ -311,6 +335,8 @@
             Copyright 2023 &#169; Tushar Agarwal. All right Reserved.
         </div>
     </footer>
+
+    </div>
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
