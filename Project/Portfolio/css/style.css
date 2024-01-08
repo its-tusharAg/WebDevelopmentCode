@@ -335,6 +335,7 @@ section.work .card-wrapper {
 section.work .card-wrapper .card {
     position: relative;
     height: 250px;
+    border-radius: 5%;
 }
 
 section.work .card-wrapper .card .overlay {
@@ -351,6 +352,7 @@ section.work .card-wrapper .card .overlay {
     color: var(--light);
     opacity: 0;
     transition: all 0.3s ease;
+    border-radius: 5%;
 }
 
 section.work .card-wrapper .card .overlay a {
@@ -361,6 +363,7 @@ section.work .card-wrapper .card .overlay a {
 section.work .card-wrapper .card img {
     height: 100%;
     width: 100%;
+    border-radius: 5%;
 }
 
 section.work .card-wrapper .card:hover .overlay {

@@ -97,3 +97,39 @@ if(1){
 else{
     console.log(false);
 }
+
+// lec quesstion
+
+let weakDay = 9;
+
+switch (weakDay) {
+    case 1:
+        console.log("Monday")
+        break;
+    case 2:
+        console.log("Tuesday")
+        break;
+    case 3:
+        console.log("wednesday")
+        break;
+    case 4:
+        console.log("Thursday")
+        break;
+    case 5:
+        console.log("Friday")
+        break;
+    case 6:
+        console.log("Saturday")
+        break;
+    case 7:
+        console.log("Sunday")
+        break;
+    default:
+        console.log("Invalid")
+        break;
+}
+
+let firstName = prompt("enter your first name");
+let lastName = prompt("enter your last name");
+
+console.log(firstName + " " + lastName);
