@@ -1,0 +1,50 @@
+@import url(./utlity.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1152px;
+
+}
+
+.hero {
+    margin: 5rem 2rem;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    background-image: url(../img/vecteezy_blue-and-white-abstract-background-design-well-use-as_14300735-1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 700px;
+
+    /* opacity: 0.5; */
+}
+
+.hero .right img {
+    width: 30rem;
+    border-radius: 5%;
+
+}
+
+.hero .right {
+    margin-right: 10rem;
+
+}
+
+.hero .left {
+    width: 30%;
+    margin: 4rem 2rem;
+}
+
+.hero .left h1 {
+    padding-bottom: 1rem;
+}
+.hero .left p {
+    line-height: 1.8;
+}
