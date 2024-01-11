@@ -29,3 +29,9 @@ console.log(monthArr);
 // q2
 let langArr = ["c", "c++", "html", "javascript", "python", "java", "c#", "sql"];
 console.log(langArr.reverse().indexOf("javascript"));
+// q3
+
+let ticTac = [["X", " ", "O"],[" ", "X", " "],["O", " ", "X"]];
+console.log(ticTac);
+ticTac[0][1] = "O";
+console.log(ticTac);
