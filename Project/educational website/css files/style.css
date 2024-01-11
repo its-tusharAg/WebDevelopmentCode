@@ -27,7 +27,7 @@ body {
 }
 
 .hero .right img {
-    width: 30rem;
+    width: 40rem;
     border-radius: 5%;
 
 }
@@ -39,12 +39,22 @@ body {
 
 .hero .left {
     width: 30%;
-    margin: 4rem 2rem;
+    /* margin: 0rem 2rem; */
 }
 
 .hero .left h1 {
     padding-bottom: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    height: 6rem;
+    padding: 0 0 0.5rem 1rem;    
 }
 .hero .left p {
     line-height: 1.8;
+    background-color: white;
+    height: 15rem;
+    padding: 0 0 0.5rem 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    color: gray;
 }
