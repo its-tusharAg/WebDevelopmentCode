@@ -28,3 +28,32 @@ while(i<5){
     console.log(i);
     i++;
 }
+
+// favMovie game
+
+// let fevMov = "Iron Man";
+// let userMov = prompt("Enter your favourate movie:");
+
+// while(userMov.toLowerCase() != fevMov.toLowerCase() && userMov.toLowerCase() != "quit"){
+//     console.log("Wrong!! HaaHaaahAa!!!");
+//     userMov = prompt("Enter your favourate movie:");
+//     if(userMov.toLowerCase() === fevMov.toLowerCase()){
+//         console.log("Yaiiii!!! you guessed it right!!.");
+//     }
+// }
+
+// for of loop
+
+let fruits = ["Mango", "Apple", "Papaya", "Banana"];
+
+for(fruit of fruits){
+    console.log(fruit);
+}
+
+for(charr of "Halwa"){
+    console.log(charr);
+}
+
+// To do list program
+
+

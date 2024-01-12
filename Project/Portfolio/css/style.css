@@ -43,21 +43,21 @@ header {
     }
 }
 
-@media (min-width: 570px) {
+@media (min-width: 768px) {
     .container {
-        max-width: 540px;
+        max-width: 720px;
     }
 }
 
-@media (min-width: 570px) {
+@media (min-width: 992px) {
     .container {
-        max-width: 540px;
+        max-width: 960px;
     }
 }
 
-@media (min-width: 570px) {
+@media (min-width: 1200px) {
     .container {
-        max-width: 540px;
+        max-width: 1152px;
     }
 }
 
@@ -559,11 +559,7 @@ footer .copyright {
     color: var(--ternary);
 }
 
-@media (max-width: 1024px) {
-    header #main-nav {
-        display: none;
-    }
-}
+
 
 /* side bar code */
 
@@ -633,3 +629,56 @@ footer .copyright {
     font-size: 2rem;
     color: var(--pure);
 }
+
+@media (max-width: 1024px) {
+    header #main-nav {
+        display: none;
+    }
+
+    .hero .left img {
+        width: 200px;
+    }
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+    .hero {
+        padding-top: 10rem;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 90%, 0 100%);
+    }
+
+    section.about .about-me-img {
+        height: 400px;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.blog .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.blog {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
+        padding-bottom: 10rem;
+    }
+}
+
+@media (max-width: 576px){
+    .hero {
+        flex-direction: column;
+    }
+
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+    }
+
+
+
+}
+
