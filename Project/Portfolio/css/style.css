@@ -1,5 +1,5 @@
 @import url(./utlality.css);
-
+@import url(./sideBar.css);
 
 :root {
     --primary: #3dcfd3;
@@ -556,94 +556,38 @@ footer .footer-socials {
 }
 
 footer .copyright {
-    color: var(--ternary);
+    color: var(--light);
 }
 
 
 
 /* side bar code */
 
-.side-main-wrapper {
-    position: relative;
-}
 
-.hamberger {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    z-index: 11;
-    background: none;
-    border: none;
-
-}
-
-.hamberger img {
-    height: 25px;
-    width: 20px;
-    cursor: pointer;
-}
-
-.mobile-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1001;
-    background: var(--secondary);
-    color: var(--light);
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    padding-top: 5rem;
-    transform: translateX(-100%);
-    transition: all .5s ease-in-out;
-}
-
-.open {
-    transform: translateX(0);
-}
-
-.times {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.times img {
-    border-image-width: 30px;
-    color: var(--pure);
-    background-color: var(--light);
-    border-radius: 10%;
-}
-
-.mobile-nav ul {
-    list-style-type: none;
-}
-
-.mobile-nav ul li a {
-    color: var(--secondary);
-    text-decoration: none;
-    font-size: 2rem;
-    color: var(--pure);
-}
 
 @media (max-width: 1024px) {
     header #main-nav {
         display: none;
     }
+    .btn_one i {
+        display:block;
+    }
+    /* .hamberger {
+        
+    } */
 
     .hero .left img {
         width: 200px;
     }
+
     .hero .right h1 {
         font-size: 3rem;
     }
+
     .hero {
         padding-top: 10rem;
     }
+
     header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 90%, 0 100%);
     }
@@ -663,13 +607,14 @@ footer .copyright {
     section.blog .card-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
     section.blog {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
         padding-bottom: 10rem;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .hero {
         flex-direction: column;
     }
@@ -678,7 +623,69 @@ footer .copyright {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
     }
 
+    .hero .right {
+        position: absolute;
+        top: 260px;
+        padding: 0 2rem;
+        background-color: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 
+    }
 
+    .hero .left {
+        margin-top: -7rem;
+        margin-right: -9rem;
+        padding-bottom: 9rem;
+    }
+
+    .about-inner-wrap {
+        flex-direction: column;
+    }
+
+    .about .about-right {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .about .about-right .social {
+        justify-content: center;
+    }
+
+    section {
+        padding: 3rem;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.services .card-wrapper .card {
+        margin-bottom: 2rem;
+    }
+    section.freelancer h1 {
+        line-height: 1.2;
+    }
+
+    section.freelancer {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+        padding-bottom: 8rem;
+    }
+
+    section.reviews .slider .slide {
+        padding: 0;
+    }
+
+    .section-heading+p {
+        margin-bottom: 3rem;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-

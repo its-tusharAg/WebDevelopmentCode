@@ -22,7 +22,10 @@
 
 <body>
     <div class="site-main-wrapper">
-        <button class="hamberger">
+
+        <!-- vide side bar -->
+
+        <!-- <button class="hamberger">
             <img src="./img/icons8-hamberger-50.png" alt="">
         </button>
 
@@ -36,7 +39,73 @@
                 <li><a href="#blog">BLOG</a></li>
             </ul>
 
-        </div>
+        </div> -->
+
+        <!-- apna clg side bar -->
+
+        <div class="main_box">
+            <input type="checkbox" id="check" />
+            <div class="btn_one">
+              <label for="check" style="color: white">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </div>
+      
+            <div class="sidebar_menu">
+              <div class="logo">
+                <a href="#">My sideBar</a>
+              </div>
+      
+              <div class="btn_two">
+                <label for="check" style="color: grey">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+              </div>
+      
+              <div class="menu">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="#home">HOME</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <a href="#about">ABOUT</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <a href="#services">SERVICES</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="#work">WORK</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-store"></i>
+                    <a href="#">Store</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#blog">BLOG</a>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-comments"></i>
+                    <a href="#">Feedback</a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="social_media">
+                <ul>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         <header>
             <div class="container">
                 <nav id="main-nav" class="flex itemCenter justify-between">
@@ -81,12 +150,12 @@
         </header>
 
         <!-- Creating about section -->
-        <section id="about" class="about">
-            <div class="container flex itemCenter">
+        <section id="about" class="about ">
+            <div class="container flex itemCenter about-inner-wrap">
                 <div class="flex1 ">
                     <img class="about-me-img" src="./img/my-img-withGlasses.jpeg" alt="nab 2">
                 </div>
-                <div class="flex1">
+                <div class="flex1 about-right">
                     <h1>About <span>Me</span></h1>
                     <h3>Hello! i'm Tushar Agarwal</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eius voluptates quisquam illo
@@ -346,7 +415,8 @@
                 <a href="#"><img src="./img/icons8-github.svg" alt="github" /></i></a>
             </div>
             <div class="copyright">
-                Copyright 2023 &#169; Tushar Agarwal. All right Reserved.
+                <!-- Copyright 2023 &#169; Tushar Agarwal. All right Reserved. -->
+                Made with lots of &hearts; by Tushar Agarwal 
             </div>
         </footer>
 
