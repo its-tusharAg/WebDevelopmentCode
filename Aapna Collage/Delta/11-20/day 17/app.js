@@ -57,3 +57,16 @@ for(charr of "Halwa"){
 // To do list program
 
 
+
+
+
+// pdf questions
+// Question 1
+let numA = [1, 2, 3, 4, 5, 6, 2, 3]
+let remoNum = 2;
+for(let i=0; i<numA.length; i++){
+    if(numA[i] === remoNum) {
+        numA[i].
+    }
+}
+

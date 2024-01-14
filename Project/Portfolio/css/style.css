@@ -656,6 +656,7 @@ footer .copyright {
 
     section.services .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 6rem;
     }
 
     section.services .card-wrapper .card {
