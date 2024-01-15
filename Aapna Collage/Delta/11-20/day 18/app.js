@@ -102,23 +102,44 @@ console.log(Math.random());
 console.log(Math.floor(Math.random()*5)+21);
 
 // guessing game
-let enteredMaxNum = Math.floor(Math.random()*prompt("Enter the max Num:"))+1;
-console.log(enteredMaxNum);
+// let enteredMaxNum = Math.floor(Math.random()*prompt("Enter the max Num:"))+1;
+// console.log(enteredMaxNum);
 
-let num = prompt("Guess the number:");
-while(true){
-    if(num == "quit"){
-        console.log("You quit the game.");
-        break;
-    }
+// let num = prompt("Guess the number:");
+// while(true){
+//     if(num == "quit"){
+//         console.log("You quit the game.");
+//         break;
+//     }
 
-    if(num == enteredMaxNum){
-        console.log("You gusses it right.");
-        break;
-    }
-    else {
-        num = prompt("You aree wrong try again");
-    }
-}
+//     if(num == enteredMaxNum){
+//         console.log("You gusses it right.");
+//         break;
+//     }
+//     else {
+//         num = prompt("You aree wrong try again");
+//     }
+// }
 
- 
+//  pdf question 
+// question 1
+console.log(Math.floor(Math.random()*6)+1);
+
+// Question 2
+const car = {
+    name: "BMW",
+    model: "X8",
+    color: "white"
+};
+console.log(car.name);
+
+// Question 3
+const person = {
+    name: "Tushar",
+    age: 20,
+    city: "mathura"
+};
+person.city = "New York";
+person.country;
+person.country = "US";
+console.log(person);
