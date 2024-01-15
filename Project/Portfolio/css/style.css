@@ -623,7 +623,7 @@ footer .copyright {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
     }
 
-    .hero .right {
+    .hero .right { 
         position: absolute;
         top: 260px;
         padding: 0 2rem;
