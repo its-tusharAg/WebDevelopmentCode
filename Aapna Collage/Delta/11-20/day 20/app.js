@@ -1,0 +1,65 @@
+// // this keyword
+// let student = {
+//     name: "Tushar",
+//     math: 26,
+//     phy: 23,
+//     getAvg() {
+//         // console.log((math+phy)/3) //Math and phy is not defined
+//         console.log((this.math + this.phy) / 2);
+//     }
+// }
+
+// console.log(student.getAvg());
+
+
+// // try and catch
+// console.log("Holla");
+// console.log("Holla");
+// try {
+//     console.log(a);
+// }
+// catch (err) {
+//     // console.log("Error 404");
+//     console.error(err);
+//     // console.log(err);
+
+// }
+// console.log("Holla")
+
+// // arrow function
+// const sumNum = (a, b) => {
+//     console.log(a + b);
+// }
+
+// console.log(sumNum);
+// sumNum(1, 3);
+
+// const powFun = a => {
+//     console.log(a * a * a);
+// }
+// powFun(2)
+
+// const mult = (a, b) => (
+//     a * b
+// );
+// console.log(mult(2, 3));
+
+// // setTimeout function
+// console.log("Halwa");
+// setTimeout(() => {
+//     console.log("Hai dosto");
+// }, 3000);
+
+// setInterval(() => {
+//     console.log("halwa hai dosto");
+// }, 2000);
+
+let id = setInterval(() => {
+    console.log("Halwa hai dosto");
+}, 2000);
+console.log(id);
+
+let id2= setInterval(() => {
+    console.log("Nahi hai");
+}, 2000);
+console.log(id2);
