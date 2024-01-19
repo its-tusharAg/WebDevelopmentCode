@@ -54,12 +54,28 @@
 //     console.log("halwa hai dosto");
 // }, 2000);
 
-let id = setInterval(() => {
-    console.log("Halwa hai dosto");
-}, 2000);
-console.log(id);
+// let id = setInterval(() => {
+//     console.log("Halwa hai dosto");
+// }, 2000);
+// console.log(id);
 
-let id2= setInterval(() => {
-    console.log("Nahi hai");
+// let id2= setInterval(() => {
+//     console.log("Nahi hai");
+// }, 2000);
+// clearInterval(id)
+// console.log(id2);
+
+// lec question
+// question 1
+const  squrFun = (a) =>(
+    a*a
+);
+console.log(squrFun(2));
+
+// question 2
+let hw = setInterval(()=>{
+    console.log("Hello world");
 }, 2000);
-console.log(id2);
+setTimeout(() => {
+    clearInterval(hw);
+}, 10000);
