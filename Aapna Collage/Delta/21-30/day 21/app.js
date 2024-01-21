@@ -81,3 +81,34 @@ let checkArr = mulArr.every((el) => {
     return el % 10 == 0;
 })
 console.log(checkArr)
+
+// default perameter
+let fun = (a, b=3) => {
+    console.log(a+b);
+}
+fun(2);
+
+// sperad
+let speradeArr = [1, 2, 3, 4, 5];
+console.log(speradeArr);
+console.log(...speradeArr);
+console.log(Math.min(speradeArr));
+console.log(Math.min(...speradeArr));
+console.log("tushar");
+console.log(..."tushar");
+let neseerarr = [speradeArr];
+let neseerarr2 = [...speradeArr];
+let neseerarr3 = speradeArr;
+console.log(neseerarr)
+console.log(neseerarr2)
+console.log(neseerarr3)
+
+let newStrArr = [..."Tushar"];
+let newStrArr2 = ["Tushar"];
+console.log(newStrArr)
+console.log(newStrArr2)
+
+oddNum = [1, 3, 5, 7];
+evenNum = [2, 4, 6];
+let newNumArr = [...evenNum, ...oddNum];
+console.log(newNumArr)
