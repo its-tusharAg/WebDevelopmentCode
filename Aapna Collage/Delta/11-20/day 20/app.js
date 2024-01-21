@@ -79,3 +79,24 @@ let hw = setInterval(()=>{
 setTimeout(() => {
     clearInterval(hw);
 }, 10000);
+
+// Pdf questions
+// question 1
+const arrayAve = (ar) => {
+    let sm = 0;
+    for(el of ar) {
+        sm += el
+    }
+    return sm/(ar.length);
+}
+
+console.log(arrayAve([2, 3, 4, 5]));
+
+// question 2
+const isEven = nm => {
+    return nm%2==0;
+}
+console.log(isEven(8));
+
+// question 3
+
