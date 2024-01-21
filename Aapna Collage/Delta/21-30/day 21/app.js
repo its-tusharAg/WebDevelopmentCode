@@ -143,3 +143,23 @@ let student = {
 let {name: name2, section} = student;
 console.log(name2);
 console.log(section);
+
+// pdf question 
+// question 1
+
+const avg = (arr) => {
+    let sq = arr.map(nm => nm*nm);
+    console.log(sq)
+    let sm = sq.reduce((res,el) => res+el);
+    console.log(sm);
+    let avgg = sm/arr.lenght;
+    console.log(avgg);
+}
+avg([1, 2, 3, 4, 5])
+
+// question 2
+let newArr = [1, 2, 3, 4, 5];
+let plusFive = newArr.map((res, el) => res = res+5);
+console.log(plusFive)
+
+// question 3
