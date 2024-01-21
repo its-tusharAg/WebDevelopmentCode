@@ -165,3 +165,60 @@ console.log(largArr([2, 4, 1, 9, 10, 2, 5, 6], 8));
 
 // question 2
 
+let str5 = "abcdabcdefgggh";
+const strFinder = (str) => {
+    let cou = 0;
+    let charArr = [];
+    let charStr = ""
+    for(ch of str) {
+        if(charArr.includes(ch) == false){
+            charArr[cou] = ch; 
+            charStr += charArr[cou];
+            cou++;
+        }
+    }
+    return charStr;
+}
+
+console.log(strFinder(str5));
+
+// question 3
+
+const maxLenOfCountry = (countryName) => {
+    let maxCountLen = "";
+    for(el of countryName) {
+        if(el.length > maxCountLen.length){
+            maxCountLen = el
+        }
+    }
+    return maxCountLen;
+}
+
+console.log(maxLenOfCountry(["Australia", "Germany", "United States of America"]));
+
+// question 4
+
+const vowelsCount = (vovStr) => {
+    let vovCount = 0;
+    for(el of vovStr){
+        if(el == 'a' || el == 'e' || el == 'i' || el == 'o' || el == 'u') {
+            vovCount++;
+        }
+    }
+    return vovCount;
+}
+
+console.log(vowelsCount("halwa"));
+
+
+// question 5
+
+const rand = (start, end) => {
+    return Math.floor(Math.random()*(end-start +1))+start;
+}
+console.log(rand(2, 5));
+console.log(rand(2, 5));
+console.log(rand(2, 5));
+console.log(rand(2, 5));
+console.log(rand(2, 5));
+
