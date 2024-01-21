@@ -112,3 +112,34 @@ oddNum = [1, 3, 5, 7];
 evenNum = [2, 4, 6];
 let newNumArr = [...evenNum, ...oddNum];
 console.log(newNumArr)
+
+let data = {
+    email: "xyz@gmail.com",
+    pass: "xyz",
+}
+console.log(data);
+let copyData = {data};
+let copyData2 = {...data, id: 123};
+console.log(copyData);
+console.log(copyData2);
+let strName = "tushar";
+copyName = {strName};
+console.log(copyName);
+copyName = {...strName};
+console.log(copyName);
+
+// Destruction
+let names = ["Tushar", "Anshika", "rahul", "vivek", "ramesh"];
+let [winner, runnerUp, ...rest] = names;
+console.log(winner, runnerUp);
+console.log(winner, runnerUp, rest);
+
+let student = {
+    name: "Tushar",
+    section: "y",
+    rn: 45, 
+} 
+
+let {name: name2, section} = student;
+console.log(name2);
+console.log(section);
