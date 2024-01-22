@@ -107,10 +107,13 @@
   }
   
 
-  /* news section */
+  /* **************************news section******************************* */
 
+  section.news-section {
+    margin: 8rem 0 8rem 0;
+  }
   .news-heading {
-    margin: 2rem 0 3rem 0;
+    margin: 0 0 3rem 0;
     text-align: center;
     font-size: 40px;
   }
@@ -133,10 +136,14 @@
     border-radius: 16px;
   }
 
-  /* about-section */
-  section.about-section .container {
+  /* ***********************about-section******************************** */
+
+  section.about-section {
     background-color: whitesmoke;
+  }
+  section.about-section .container {
     margin-top: 5rem;
+    width: 100%;
 }
 
 .about-left {
@@ -164,3 +171,76 @@
     padding: 2rem;
     margin: 4rem 0rem 4rem 0;
 }
+
+/* **********************Cards********************** */
+
+.card-section {
+  padding-top: 3rem;
+  height: 800px;
+  background: whitesmoke;
+  margin-top: 30px;
+}
+section.card-section {
+  /* border: 10px solid gray; */
+  padding: 2rem;
+  border-radius: 15px;
+}
+.card-section h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: sans-serif;
+  background-color: gray;
+  border-radius: 15px;
+}
+.card-row {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  /* Set the desired height of the box */
+  overflow: hidden; /* Ensure that the image doesn't overflow */
+  padding: 2px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card-btn {
+  background: gray;
+}
+.card-body a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.card-text {
+  font-family: sans-serif;
+}
+.card-title {
+  text-shadow: 10px;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Scale the card to 110% on hover */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
