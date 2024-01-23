@@ -292,9 +292,6 @@ section.testiminial-section {
   padding: 5rem 0;
 
 }
-/* .testi-container {
-  margin: 5rem 2rem;
-} */
 
 .info-row {
   display: flex;
@@ -308,13 +305,12 @@ section.testiminial-section {
 }
 
 .testi-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 70rem;
-  justify-items:center; 
+  display: flex;
+  justify-content: center;
 }
 .testi-card {
   margin: 30px 0 0 0;
+  padding: 2rem;
 }
 .testi-card img {
   height: 400px;
