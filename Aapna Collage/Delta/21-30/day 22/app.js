@@ -30,3 +30,58 @@ let bol = document.querySelector("h1");
 // bol.innerHTML = "<b>Halw</b>";
 // console.log(bol.innerText);
 bol.innerHTML = `<u>${bol.innerText}</u>`
+
+// set and get attributes
+let img = document.querySelector("img");
+let imgAtr = img.getAttribute("id");
+console.dir(img.style);
+console.log(img.style);
+img.setAttribute("src", "https://upload.wikimedia.org/wikipedia/en/b/b3/Spider-Man_characters.jpeg")
+
+let hed = document.querySelector("h1");
+// hed.style.color = "green" 
+// hed.style.backgroundColor = "yellow" 
+
+let ankr = document.querySelectorAll(".personal-info a");
+for(let i=0; i<ankr.length; i++){
+    ankr[i].style.color = "yellow";
+}
+
+console.dir(hed.classList);
+hed.classList.add("green");
+hed.classList.remove("green");
+console.log(hed.classList.contains("halwa"));
+console.log(hed.classList.contains("underline"));
+
+let newp = document.createElement("p");
+newp.innerText = "Halwa hai dosto";
+console.log(newp);
+let box = document.querySelector(".personal-info");
+box.appendChild(newp);
+
+
+// video question 
+// first
+let para = document.createElement("p");
+para.innerText = "Hey i am red";
+let body = document.querySelector("body");
+body.append(para)
+para.style.color = "red";
+
+// second
+let h3 = document.createElement("h3");
+h3.innerText = "I am blue";
+body.append(h3);
+h3.style.color = "blue";
+//  third
+let div = document.createElement("div");
+div.style.border = "6px solid black";
+div.style.backgroundColor = "pink";
+let h1Div = document.createElement("h1");
+h1Div.innerText = "I am in a div";
+let paraDiv = document.createElement("p");
+paraDiv.innerText = "me to"
+
+body.append(div);
+div.append(h1Div);
+div.append(paraDiv);

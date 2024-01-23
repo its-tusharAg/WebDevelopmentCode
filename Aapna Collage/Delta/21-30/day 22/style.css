@@ -5,15 +5,21 @@
     padding-top: 1rem;
 }
 
-.creation > p {
+.creation>p {
     background-color: lightgoldenrodyellow;
 }
-.creation-img{
+
+.creation-img {
     display: flex;
 
 
 }
-.creation-img > img {
+
+.creation-img>img {
     height: 20rem;
     margin: 1rem 0 2rem 1rem;
+}
+
+.green{
+    background: lightgreen;
 }
