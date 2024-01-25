@@ -3,8 +3,8 @@ let btns = document.querySelectorAll("button");
 //     console.log("it clicked");
 // };
 // btn.onclick = () => {
-    // alert("it clicked")
-     // console.log("it clicked");
+// alert("it clicked")
+// console.log("it clicked");
 // };
 
 
@@ -35,21 +35,58 @@ let btns = document.querySelectorAll("button");
 
 // random color generator
 
-let btn = document.querySelector("button");
-let h1 = document.querySelector("h1");
-let p = document.querySelector("p");
+// let btn = document.querySelector("button");
+// let h1 = document.querySelector("h1");
+// let p = document.querySelector("p");
 
-btn.addEventListener("click", () => {
-    h1.innerText = getRandomColor();
-    p.innerText = "";
-    p.style.backgroundColor = getRandomColor();
+// btn.addEventListener("click", () => {
+//     h1.innerText = getRandomColor();
+//     p.innerText = "";
+//     p.style.backgroundColor = getRandomColor();
+// })
+
+// function getRandomColor() {
+//     let red = Math.floor(Math.random()*255);
+//     let green = Math.floor(Math.random()*255);
+//     let blue = Math.floor(Math.random()*255);
+
+//     let color = `rgba(${red}, ${green}, ${blue})`;
+//     return color;
+// }
+
+// this code
+// let h1 = document.querySelector("h1");
+// let h3 = document.querySelector("h3");
+// let p = document.querySelector("p");
+// let btn = document.querySelector("button");
+
+// function bgChange() {
+//     this.style.backgroundColor = "blue";
+// }
+
+// h1.addEventListener("click", bgChange);
+// h3.addEventListener("click", bgChange);
+// p.addEventListener("click", bgChange);
+// btn.addEventListener("click", bgChange);
+// h1.addEventListener("dblclick", (e) => {
+//     console.log(e);
+// })
+
+// keyboard events
+
+// inp = document.querySelector("input");
+// inp.addEventListener("keydown", () =>{
+//     console.log("key is prasses")
+// })
+// inp.addEventListener("keydown", (e) =>{
+//     console.log("Key =", e.key, "code =", e.code);
+// })
+
+// form event
+let form = document.querySelector("form");
+// let input = document.querySelector("input");
+
+form.addEventListener("submit", () => {
+    event.preventDefault();
+    alert("your form is submited");
 })
-
-function getRandomColor() {
-    let red = Math.floor(Math.random()*255);
-    let green = Math.floor(Math.random()*255);
-    let blue = Math.floor(Math.random()*255);
-
-    let color = `rgba(${red}, ${green}, ${blue})`;
-    return color;
-}
