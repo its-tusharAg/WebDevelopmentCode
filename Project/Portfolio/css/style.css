@@ -523,6 +523,8 @@ textarea:focus {
     margin-top: 2rem;
 }
 
+/* footer code */
+
 footer {
     background-color: var(--dark);
     text-align: center;
