@@ -163,3 +163,17 @@ let plusFive = newArr.map((res, el) => res = res+5);
 console.log(plusFive)
 
 // question 3
+let wordsArr = ["halwa", "nice", "Tushar"];
+let upperWordsArr = wordsArr.map((res, e) => {
+     return res = res.toUpperCase(); 
+})
+console.log(upperWordsArr)
+
+// question 4
+let doubleAndReturnArgs = (ar, vr) => {
+    let newAr = ar;
+    newAr  ;
+    return newAr;
+}
+
+console.log(doubleAndReturnArgs([2,3,4,5], 432))
