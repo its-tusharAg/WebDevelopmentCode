@@ -140,9 +140,12 @@ nav .left div a {
 nav .left div a:hover {
     color: var(--primary);
 }
+nav .left #branding img {
+    width: 150px;
+}
 
 nav .left {
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 1rem;
 }
 
 nav .left #branding {
@@ -448,10 +451,12 @@ section.work .card-wrapper .card .overlay {
 }
 
 section.work .card-wrapper .card .overlay a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
-
+section.work .card-wrapper .card .overlay span {
+    color: black;
+}
 section.work .card-wrapper .card img {
     height: 100%;
     width: 100%;
@@ -596,20 +601,21 @@ textarea:focus {
 footer {
     background-color: var(--dark);
     text-align: center;
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .footer-logo {
     margin-bottom: 3rem;
-    width: 150px;
+    width: 250px;
 }
 
 footer .footer-socials a {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
 }
 
 footer .footer-socials img {
     background-color: var(--light);
+    height: 2.5rem;
     border-radius: 15%;
     transition: 0.5s ease;
 }
@@ -627,6 +633,7 @@ footer .footer-socials {
 
 footer .copyright {
     color: var(--light);
+    margin: 0 0 -15px 0;
 }
 
 
