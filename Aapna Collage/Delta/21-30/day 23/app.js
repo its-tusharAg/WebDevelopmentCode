@@ -1,4 +1,4 @@
-let btns = document.querySelectorAll("button");
+// let btns = document.querySelectorAll("button");
 // btn.onclick = function () {
 //     console.log("it clicked");
 // };
@@ -86,7 +86,56 @@ let btns = document.querySelectorAll("button");
 let form = document.querySelector("form");
 // let input = document.querySelector("input");
 
-form.addEventListener("submit", () => {
-    event.preventDefault();
-    alert("your form is submited");
+// form.addEventListener("submit", () => {
+//     event.preventDefault();
+//     alert("your form is submited");
+// })
+
+// code to extract data from form
+
+// form.addEventListener("submit", () => {
+//     event.preventDefault();
+//     let inp = document.querySelector("input");
+//     // console.dir(inp.innerText);
+//     // console.dir(inp.value);
+//     let user = document.querySelector("#user");
+//     let pass = document.querySelector("#pass");
+//     console.log(user.value);
+//     console.log(pass.value);
+// })
+
+// change event
+// form.addEventListener("submit", () => {
+//     event.preventDefault();})
+//     let user = document.querySelector("#user");
+//     // for change event
+//     form.addEventListener("change", () => {
+//         console.dir(user.value)
+//     })
+//// for input event
+//     user.addEventListener("input", () => {
+//         console.dir(user.value)
+//     })
+
+
+// pdf questions
+
+// q2
+let body = document.querySelector("body")
+let btn = document.createElement("button");
+body.append(btn);
+btn.innerText = "Click Me!"
+btn.addEventListener("click", () => {
+    btn.style.backgroundColor = "green"
 })
+
+// q3
+let h2 = document.querySelector("h2");
+let inp = document.querySelector("#nmINp");
+
+inp.addEventListener("input", () => {
+    // console.log(inp.value)
+    h2.innerText = inp.value;
+})
+
+
