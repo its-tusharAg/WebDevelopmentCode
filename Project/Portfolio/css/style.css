@@ -1,5 +1,5 @@
 @import url(./utlality.css);
-@import url(./sideBar.css);
+/* @import url(./sideBar.css); */
 
 :root {
     --primary: #3dcfd3;
@@ -23,6 +23,75 @@ html {
     margin: 0;
     box-sizing: border-box;
     -webkit-font-smotthing: antialiases;
+}
+
+/* video side bar code */
+.side-main-wrapper {
+    position: relative;
+}
+
+.hamberger {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    display: none;
+    /* opacity: 0; */
+}
+
+.hamberger img {
+    height: 25px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--secondary);
+    color: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.times {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img {
+    /* border-image-width: 10px; */
+    color: var(--pure);
+    background-color: var(--light);
+    border-radius: 10%;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+}
+
+.mobile-nav ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--pure);
 }
 
 header {
@@ -573,9 +642,9 @@ footer .copyright {
     .btn_one i {
         display:block;
     }
-    /* .hamberger {
-        
-    } */
+    .hamberger {
+     display: block;   
+    }
 
     .hero .left img {
         width: 200px;
