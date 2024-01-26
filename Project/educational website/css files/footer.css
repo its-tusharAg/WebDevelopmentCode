@@ -1,0 +1,42 @@
+section.footer-section{
+    margin: 10rem 0 0 0;
+    background-color: rgb(139, 213, 237);
+    padding: 20px 0 20px 0;
+  }
+  .footer-container {
+    display: flex;
+  }
+  
+  .info-footer img {
+    width: 12rem;
+    margin: 0 0 2rem 0;
+  }
+  
+  .foot-imp-links h2 {
+    margin: 0 0 2rem 0 ;
+  }
+  .foot-imp-links ul li {
+      list-style: none;
+      margin-bottom: 1rem;
+  }
+  
+  .foot-imp-links ul li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .foot-social .contact img{
+    height: 2rem;
+    margin: 0.8rem 0 0 0;
+  }
+  .foot-social ul li{
+      list-style: none;
+    }
+    
+    .foot-social .social-links ul{
+        display: flex;
+    }
+    .foot-social .social-links ul img {
+        height: 2rem;
+        margin: 1rem 1.5rem  0 0;
+    }
