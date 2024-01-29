@@ -1,13 +1,35 @@
+.blog-container .cards{
+    display: flex;
+    justify-content: space-around;
+}
 .blog-container .cards .card {
-    position: absolute;
-    margin-top: 5rem;
-    /* height: 30rem; */
     width: 20rem;
-    border: 2px solid black;
-
+    margin-top: 3rem;
+    padding: 0;
 }
 
-.blog-container .cards .card .blog-img{
-    position: relative;
-    size: cover;
+.card .blog-data {
+    margin: 30px 15px;
+}
+
+.card .blog-data h5 {
+    line-height: 30px;
+}
+
+.card .blog-data .blog-tags {
+    display: flex;
+}
+
+.card .blog-data .blog-tags .tag {
+    margin: 10px 0px 25px 5px;
+    padding: 3px 13px;
+    background-color: lightgray;
+    border-radius: 15px;
+    color: rgb(74, 74, 74);
+    opacity: 0.6;
+}
+.card .blog-data button {
+    padding: 0.5rem 1.2rem;
+    border-radius: 15px;
+    /* margin-left: 10px; */
 }
