@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-  margin: 0 2rem 0 4rem;
-}
+  /* margin: 0 2rem 0 4rem; */
+} 
 
 #menu {
   list-style: none;
@@ -340,13 +340,32 @@ section.testiminial-section {
 }
 
  /* ******bloges sections*******  */
- .blog-container .cards{
+ 
+.blog-container .heading-row {
+  display: flex;
+  justify-content: center;
+}
+.blog-container .blog-heading{
+  text-align: center;
+  margin: 3rem 0 0 0;
+  /* width: 30rem; */
+  width: 35rem;
+}
+
+.blog-container .blog-heading h2 {
+  margin: 0 0 1rem 0;
+}
+.blog-container p {
+  color: gray;
+  opacity: 0.8;
+}
+.blog-container .cards{
   display: flex;
   justify-content: space-around;
 }
 .blog-container .cards .card {
   width: 20rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   padding: 0;
 }
 
