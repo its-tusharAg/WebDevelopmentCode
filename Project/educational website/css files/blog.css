@@ -1,0 +1,13 @@
+.blog-container .cards .card {
+    position: absolute;
+    margin-top: 5rem;
+    /* height: 30rem; */
+    width: 20rem;
+    border: 2px solid black;
+
+}
+
+.blog-container .cards .card .blog-img{
+    position: relative;
+    size: cover;
+}
