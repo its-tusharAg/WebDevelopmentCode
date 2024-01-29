@@ -1,0 +1,28 @@
+/* div {
+    background-color: lightpink;
+    height: 15rem;
+    width: 25rem;
+}
+ul{
+    background-color: blue;
+}
+li{
+    background-color: lightgreen;
+} */
+
+            /* To do list */
+
+.container {
+    background-color: lightgray;
+    height: 100vh;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.container .inp-section {
+    margin-left: 1rem;
+}
+.result-area {
+    margin: 1rem 0 0 2rem;
+}
