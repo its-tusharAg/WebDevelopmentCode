@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 #header {
@@ -401,7 +402,7 @@ section.testiminial-section {
 }
 
 /* ****chat side btn section***** */
-.msg-btn-container {
+section.msg-side-btn {
   position: fixed;
   height: 80px;
   width: 80px;
@@ -410,6 +411,7 @@ section.testiminial-section {
   bottom: 120px;
   right: 60px;
 }
+
 
 section.msg-side-btn .msg-btn {
   position: relative;
@@ -420,7 +422,24 @@ section.msg-side-btn .msg-btn {
 section.msg-side-btn .msg-btn img {
   height: 50px;
 }
-
+/* ****swip-up btn**** */
+section.swip-up-section {
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: purple;
+}
+section.swip-up-section .swip-up-btn {
+  position: relative; 
+  left: 12px;
+  top: 12px;
+}
+section.swip-up-section .swip-up-btn img {
+  height: 26px;
+}
 /* ******footer code***** */
 
 section.footer-section {
