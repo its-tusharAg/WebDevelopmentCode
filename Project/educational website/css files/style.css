@@ -18,7 +18,7 @@ body {
 
 .container {
   /* margin: 0 2rem 0 4rem; */
-} 
+}
 
 #menu {
   list-style: none;
@@ -339,13 +339,14 @@ section.testiminial-section {
   border-radius: 20px;
 }
 
- /* ******bloges sections*******  */
- 
+/* ******bloges sections*******  */
+
 .blog-container .heading-row {
   display: flex;
   justify-content: center;
 }
-.blog-container .blog-heading{
+
+.blog-container .blog-heading {
   text-align: center;
   margin: 3rem 0 0 0;
   /* width: 30rem; */
@@ -355,14 +356,17 @@ section.testiminial-section {
 .blog-container .blog-heading h2 {
   margin: 0 0 1rem 0;
 }
+
 .blog-container p {
   color: gray;
   opacity: 0.8;
 }
-.blog-container .cards{
+
+.blog-container .cards {
   display: flex;
   justify-content: space-around;
 }
+
 .blog-container .cards .card {
   width: 20rem;
   margin-top: 1.5rem;
@@ -389,10 +393,32 @@ section.testiminial-section {
   color: rgb(74, 74, 74);
   opacity: 0.6;
 }
+
 .card .blog-data button {
   padding: 0.5rem 1.2rem;
   border-radius: 15px;
   /* margin-left: 10px; */
+}
+
+/* ****chat side btn section***** */
+.msg-btn-container {
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+  border-radius: 50%;
+  bottom: 120px;
+  right: 60px;
+}
+
+section.msg-side-btn .msg-btn {
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+section.msg-side-btn .msg-btn img {
+  height: 50px;
 }
 
 /* ******footer code***** */
@@ -472,10 +498,12 @@ section.footer-section {
 .foot-social .social-links {
   margin-left: 2rem;
 }
+
 .foot-social .social-links h2 {
   margin: 2rem 0 0.6rem 1rem;
   width: 20rem;
 }
+
 .foot-social .social-links ul {
   display: flex;
   width: 12rem;
