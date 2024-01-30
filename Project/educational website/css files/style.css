@@ -372,6 +372,7 @@ section.testiminial-section {
   width: 20rem;
   margin-top: 1.5rem;
   padding: 0;
+  /* box-shadow: 4px 8px 50px gray; */
 }
 
 .card .blog-data {
