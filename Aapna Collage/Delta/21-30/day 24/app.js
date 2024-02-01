@@ -33,17 +33,31 @@ btn.addEventListener("click", () => {
     dlBtn.innerText = "Delete"
     dlBtn.classList.add("delete");
 
+    // dlBtn.addEventListener("click", () => {
+    //     elm.remove();
+    // });
     elm.appendChild(dlBtn);
     ul.append(elm);
     inp.value = "";
 })
 
-let dleBtns = document.querySelectorAll(".delete");
-for (dleBtn of dleBtns) {
-    dleBtn.addEventListener("click", () => {
-        let par = this.parentElement;
-        par.remove();
-    })
-}
+ul.addEventListener("click", (evl) => {
+    console.log("Btn cklick");
+    // let btns = document.querySelectorAll(".delete");
+    // for(btn of btns) {
+    //     btn.remove;
+    // }
+    console.log(evl.target);
+    
+})
+
+// let dleBtns = document.querySelectorAll(".delete");
+// for (dleBtn of dleBtns) {
+//     dleBtn.addEventListener("click", () => {
+//         let par = this.parentElement;
+//         console.log(par);
+//         par.remove();
+//     });
+// }
 
 
