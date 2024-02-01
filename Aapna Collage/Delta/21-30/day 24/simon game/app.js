@@ -42,7 +42,7 @@ function checkAns(idx) {
             setTimeout(levelUp, 1000);
         }
     } else {
-        h3.innerHTML = `Game Over! Your score was <b>${level}. Press any key to start.`;
+        h3.innerHTML = `Game Over! Your score is <b>${level}. Press any key to start.`;
         body.classList.add("danger");
         setTimeout(function() {
             body.classList.remove("danger")
