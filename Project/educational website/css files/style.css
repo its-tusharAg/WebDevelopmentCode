@@ -11,18 +11,19 @@ body {
 }
 
 /* homepage code */
+/* .navbar {
+  width: 90%;
+  background-color: #878787;
+  margin: 2rem auto; 
+  border-bottom: 2px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+} */
 .navbar {
-  /* padding: 2rem; */
-  width: 85%;
+  width: 90%;
   background-color: whitesmoke;
   margin: 2rem auto; 
-  /* Center the navbar horizontally */
-  /* border-top: 2px solid black; */
   border-bottom: 1px solid black;
-  /* box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);  */
-  /* Adding box shadow with more elevation */
-  /* border-radius: 20px;  */
-  /* Adding border-radius to make the navbar rounder */
 }
 
 .navbar-brand {
