@@ -64,31 +64,57 @@
 
 // Promices functions
 
-function addToDb(data) {
-    return new Promise((resolve, reject) => {
-        let intSpeed = Math.floor(Math.random()*10)+1;
-        if(intSpeed > 4) {
-            resolve("Data is saved");
-        }
-        else{
-            reject("Weak connection");
-        }
+// function addToDb(data) {
+//     return new Promise((resolve, reject) => {
+//         let intSpeed = Math.floor(Math.random()*10)+1;
+//         if(intSpeed > 4) {
+//             resolve("Data is saved");
+//         }
+//         else{
+//             reject("Weak connection");
+//         }
+//     });
+// }
+
+// let request = addToDb("Tjtushar");
+// request
+// .then((result) => {
+//     console.log("Success1");
+//     console.log(result);
+//     return addToDb("Halwa hai dosto");
+// })
+// .then((result) => {
+//     console.log("success2")
+//     console.log(result);
+// })
+// .catch((error) => {
+//     console.log("fialure")
+//     console.log(error);
+// });
+
+
+// changing h1 code using promices
+let h1 = document.querySelector("h1");
+function changeColorPromise(col, delay) {
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            h1.style.color = col;
+            resolve("color changed")
+        }, delay)
     });
 }
 
-let request = addToDb("Tjtushar");
-request
-.then((result) => {
-    console.log("Success1");
-    console.log(result);
-    return addToDb("Halwa hai dosto");
+changeColorPromise("green", 1000)
+.then(()=>{
+    return changeColorPromise("pink", 1000)
 })
-.then((result) => {
-    console.log("success2")
-    console.log(result);
+.then(()=>{
+    return changeColorPromise("red", 1000)
 })
-.catch((error) => {
-    console.log("fialure")
-    console.log(error);
-});
+.then(()=>{
+    return changeColorPromise("gray", 1000)
+})
+.then(()=>{
+    return changeColorPromise("blue", 1000)
+})
 
