@@ -1,21 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="./css files/contactpage.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./contactpage.css" />
+  </head>
+  <body>
+    <!-- contact us section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-heading">
+          <h2>CONTACT US ABOUT HUBSPOT'S SOFTWARE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            cum error culpa quis illo est aut? Ex dignissimos tempore corrupti,
+            corporis ea non omnis commodi quae minus facere suscipit
+            perspiciatis.
+          </p>
+        </div>
+        <div class="boxes contact-details">
+          <div class="phn-mail-box">
+            <div class="box phn-box">
+              <div class="phn-img">
+                <img src="../img/icons8-phone-50.png" alt="" />
+              </div>
+              <div class="phn-detail">
+                <h6>Call us directly at</h6>
+                <h4>7452981312</h4>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+            <div class="box mail-box">
+              <div class="mail-img">
+                <img src="../img/icons8-linkedin.svg" alt="" />
+              </div>
+              <div class="mail-detail">
+                <h6>Chat with us</h6>
+                <button class="btn btn-primary">Chat with us</button>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <div class="row switch-btn">
+              <button class="btn col-6 st-switch">Student form</button>
+              <button class="btn col-6 tr-switch">Student form</button>
+            </div>
+            <div class="detail-form stud-page">
+              <div class="form-msg">
+                <h2>Book a Meeting</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  quod recusandae veritatis eligendi ab, quidem vitae tempore
+                  vel dicta in eaque esse, ipsa earum quae a neque minus iste!
+                  Consequuntur.
+                </p>
+              </div>
 
+              <form action="./action.php">
+                <div class="contact-form">
+                  <div class="fs-nme inp-detail">
+                    <label for="fst-nme">First Name</label>
+                    <input type="text" id="fst-nme" />
+                  </div>
+                  <div class="ls-nme inp-detail">
+                    <label for="lst-nme">Last Name</label>
+                    <input type="text" id="lst-nme" />
+                  </div>
+                  <div class="mail-id inp-detail">
+                    <label for="mle-nme">E-mail ID</label>
+                    <input type="email" name="ml" id="mle-nme" />
+                  </div>
+                  <div class="phn-num inp-detail">
+                    <label for="lst-nme">Contact Number</label>
+                    <input type="text" id="lst-nme" />
+                  </div>
+                  <div class="inp-detail course-select">
+                    <label for="std-course-option">Select Your course</label>
+                    <select name="sle" id="std-course-option">
+                      <option value="">Select your course</option>
+                      <option value="sap">SAP</option>
+                      <option value="abc">ABC</option>
+                      <option value="xyz">XYZ</option>
+                      <option value="nice">Nice</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- <div class="detail-form trainer-page">
+              <h1>Book a Meeting</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                quod recusandae veritatis eligendi ab, quidem vitae tempore vel
+                dicta in eaque esse, ipsa earum quae a neque minus iste!
+                Consequuntur.
+              </p>
 
+              <form action="./action.php">
+                <div class="contact-form">
+                  <div class="fs-nme inp-detail">
+                    <label for="fst-nme">First Name</label>
+                    <input type="text" id="fst-nme" />
+                  </div>
+                  <div class="ls-nme inp-detail">
+                    <label for="lst-nme">First Name</label>
+                    <input type="text" id="lst-nme" />
+                  </div>
+                  <div class="mail-id inp-detail">
+                    <label for="mle-nme">E-mail ID</label>
+                    <input type="email" name="ml" id="mle-nme">
+                  </div>
+                  <div class="phn-num inp-detail">
+                    <label for="lst-nme">First Name</label>
+                    <input type="text" id="lst-nme" />
+                  </div>
+                  <div class="course-select">
+                    <label for="train-course-option">Select Your course</label>
+                    <select name="sle" id="train-course-option">
+                        <option value="">Select your course</option>
+                        <option value="sap">SAP</option>
+                        <option value="abc">ABC</option>
+                        <option value="xyz">XYZ</option>
+                        <option value="nice">Nice</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
