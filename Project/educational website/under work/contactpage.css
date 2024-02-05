@@ -13,10 +13,10 @@ section.contact-section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background-image: url(../img/download\ \(1\).jpeg); */
-    background-color: black;
+    background-image: url(../img/vecteezy_blue-and-white-abstract-background-design-well-use-as_14300735-1.jpg);
+    /* background-color: black; */
     background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
     padding: 5rem 3rem 6rem 3rem;
     /* margin: 2rem 0; */
