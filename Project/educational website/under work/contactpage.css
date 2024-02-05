@@ -93,6 +93,7 @@ p {
     text-align: center;
     margin: 1rem;
 }
+
 .contact-form .detail-form .form-msg h2 {
     margin: 1rem 0 2rem 0;
 }
@@ -108,10 +109,11 @@ p {
     flex-direction: column;
     align-items: center;
 }
+
 .contact-form .detail-form .contact-form .inp-detail input {
     width: 15rem;
 }
 
-.contact-form .detail-form .contact-form .course-select {
-
+.hide{
+    display: none;
 }
