@@ -1,4 +1,5 @@
 @import url(./card-style.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -11,61 +12,68 @@ body {
 }
 
 /* homepage code */
-/* .navbar {
-  width: 90%;
-  background-color: #878787;
-  margin: 2rem auto; 
-  border-bottom: 2px solid black;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-} */
 .navbar {
   width: 90%;
   background-color: whitesmoke;
-  margin: 2rem auto; 
+  margin: 2rem auto;
   border-bottom: 1px solid black;
 }
 
 .navbar-brand {
   font-family: sans-serif;
   font-weight: 800;
-  margin-right: auto; /* Push the brand/logo to the left */
-  margin-left: auto; /* Push the brand/logo to the right */
+  margin-right: auto;
+  /* Push the brand/logo to the left */
+  margin-left: auto;
+  /* Push the brand/logo to the right */
 }
+
 .navbar-collapse ul li a {
   transition: all 0.1s ease;
   font-weight: 600;
   font-size: large;
 }
+
 .nav-link:hover {
   font-weight: 500;
 }
+
 .navbar-nav.ml-auto .btn-1,
 .navbar-nav.ml-auto .btn-2 {
   padding: 8px 16px;
   font-size: 16px;
-  border: none; /* No border by default */
-  border-radius: 4px; /* Semi-rounded corners for SignUp button */
+  border: none;
+  /* No border by default */
+  border-radius: 4px;
+  /* Semi-rounded corners for SignUp button */
   transition: all 0.3s ease;
-  margin-right: 10px; /* Margin between buttons */
+  margin-right: 10px;
+  /* Margin between buttons */
 }
 
 .navbar-nav.ml-auto .btn-1 {
-  background-color: transparent; /* Transparent background for Login button */
-  color: black; /* Blue text color */
+  background-color: transparent;
+  /* Transparent background for Login button */
+  color: black;
+  /* Blue text color */
   border: 2px solid black;
 }
 
 .navbar-nav.ml-auto .btn-2 {
-  background-color: black; /* Green color for SignUp button */
-  color: #fff; /* White text color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add elevation */
+  background-color: black;
+  /* Green color for SignUp button */
+  color: #fff;
+  /* White text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add elevation */
   border: 2px solid transparent;
 }
 
 .navbar-nav.ml-auto .btn-1:hover {
-  background-color: black; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: black;
+  /* Change background color on hover */
+  color: #fff;
+  /* Change text color on hover */
 }
 
 .navbar-nav.ml-auto .btn-2:hover {
@@ -74,45 +82,56 @@ body {
   color: black;
   border: 2px solid black;
 }
+
 .section {
   padding: 50px 0;
-  background-color: #1b1b1b; /* Light gray background color */
+  background-color: #1b1b1b;
+  /* Light gray background color */
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
 }
+
 .rounded-image {
-  border-radius: 20px; /* Adjust border radius for the image */
+  border-radius: 20px;
+  /* Adjust border radius for the image */
 }
+
 .section .container .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .b img {
   /* padding: 4rem; */
   margin-left: 7.5rem;
   height: 30rem;
 }
+
 .a h2 {
   color: white;
   font-size: 4rem;
   font-family: sans-serif;
   line-height: 6rem;
 }
+
 .a p {
   color: white;
   font-size: 2rem;
   letter-spacing: 2px;
 }
+
 .btn-1 {
   padding: 0.5rem;
   font-weight: bold;
   transition: all 0.3s ease;
   border-radius: 4px;
 }
+
 .btn-1:hover {
   color: white;
   background: transparent;
 }
+
 .btn-2 {
   background: transparent;
   padding: 0.5rem;
@@ -124,13 +143,16 @@ body {
   border-radius: 4px;
   width: 100px;
 }
+
 .btn-2:hover {
   background-color: white;
   color: black;
 }
+
 .b img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 92%);
-  border-bottom-left-radius: 50%; /* Adjust as needed */
+  border-bottom-left-radius: 50%;
+  /* Adjust as needed */
   border-bottom-right-radius: 50%;
 }
 
@@ -139,20 +161,18 @@ body {
   --border-angle: 0turn;
   /* width: 60vmin;
   height: 50vmin; */
-  background-image: conic-gradient(
-      from var(--border-angle),
+  background-image: conic-gradient(from var(--border-angle),
       #213,
       #112 50%,
-      #213
-    ),
+      #213),
     conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
-  background-size: calc(100% - (var(--border-size) * 2))
-      calc(100% - (var(--border-size) * 2)),
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)),
     cover;
   background-position: center center;
   background-repeat: no-repeat;
 
   animation: bg-spin 3s linear infinite;
+
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
@@ -169,6 +189,7 @@ body {
   inherits: true;
   initial-value: 0turn;
 }
+
 .title {
   position: relative;
   transition: all 0.9s ease;
@@ -178,15 +199,20 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; /* Adjust this value to control the underline position */
+  bottom: -3px;
+  /* Adjust this value to control the underline position */
   width: 100%;
-  height: 2px; /* Adjust this value to control the thickness of the underline */
-  background-color: white; /* Change this to the color you want for the underline */
+  height: 2px;
+  /* Adjust this value to control the thickness of the underline */
+  background-color: white;
+  /* Change this to the color you want for the underline */
 }
+
 .a h2 span {
   color: goldenrod;
   letter-spacing: 0.2rem;
 }
+
 .navbar-brand span {
   color: goldenrod;
   letter-spacing: 0.2rem;
@@ -219,14 +245,19 @@ section.news-section {
   padding: 1rem;
   border-radius: 16px;
 }
-
+.left-col > *{
+  width: 25rem;
+}
 .right-col {
   margin-left: 3rem;
+  padding: 1rem;
   background-color: lightblue;
   padding: 1rem;
   border-radius: 16px;
 }
-
+.right-col > *{
+  width: 25rem;
+}
 /* ***********************about-section******************************** */
 
 section.about-section {
@@ -354,6 +385,7 @@ section.testiminial-section {
   background-color: white;
   color: black;
 }
+
 .blog-container .cards {
   display: flex;
   justify-content: space-around;
@@ -369,9 +401,11 @@ section.testiminial-section {
   padding: 0;
   /* box-shadow: 4px 8px 50px gray; */
 }
+
 .card:hover {
   transform: scale(1.1);
 }
+
 .card .blog-data {
   margin: 30px 15px;
 }
@@ -420,6 +454,7 @@ section.msg-side-btn .msg-btn {
 section.msg-side-btn .msg-btn img {
   height: 50px;
 }
+
 /* ****swip-up btn**** */
 section.swip-up-section {
   position: fixed;
@@ -430,11 +465,13 @@ section.swip-up-section {
   border-radius: 50%;
   background-color: purple;
 }
+
 section.swip-up-section .swip-up-btn {
-  position: relative; 
+  position: relative;
   left: 12px;
   top: 12px;
 }
+
 section.swip-up-section .swip-up-btn img {
   height: 26px;
 }
@@ -552,7 +589,7 @@ p {
   width: 15rem;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
