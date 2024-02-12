@@ -34,3 +34,4 @@ stBtn.addEventListener("click", () => {
   trinerPg.classList.add("hide");
   studentPg.classList.remove("hide");
 })
+
