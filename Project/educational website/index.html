@@ -473,27 +473,27 @@
               </p>
             </div>
 
-            <form action="./action.php">
+            <form action="https://formsubmit.co/officialtjtushar@gmail.com" target="_blank" method="POST">
               <div class="contact-form">
                 <div class="fs-nme inp-detail">
                   <label for="fst-nme">First Name</label>
-                  <input type="text" id="fst-nme" />
+                  <input type="text" id="fst-nme" name="frs-name" required/>
                 </div>
                 <div class="ls-nme inp-detail">
                   <label for="lst-nme">Last Name</label>
-                  <input type="text" id="lst-nme" />
+                  <input type="text" id="lst-nme" name="lst-name" required/>
                 </div>
                 <div class="mail-id inp-detail">
                   <label for="mle-nme">E-mail ID</label>
-                  <input type="email" name="ml" id="mle-nme" />
+                  <input type="email" id="mle-nme" name="email" required/>
                 </div>
                 <div class="phn-num inp-detail">
-                  <label for="lst-nme">Contact Number</label>
-                  <input type="text" id="lst-nme" />
+                  <label for="con-num">Contact Number</label>
+                  <input type="text" id="con-num" name="phn-num" required/>
                 </div>
                 <div class="inp-detail course-select">
                   <label for="std-course-option">Select Your course</label>
-                  <select name="sle" id="std-course-option">
+                  <select name="Course" id="std-course-option" required>
                     <option value="">Select your course</option>
                     <option value="sap">SAP</option>
                     <option value="abc">ABC</option>
@@ -501,6 +501,7 @@
                     <option value="nice">Nice</option>
                   </select>
                 </div>
+                <button class="btn" type="submit" >Submit</button>
               </div>
             </form>
           </div>
