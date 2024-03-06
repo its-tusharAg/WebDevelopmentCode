@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./scroll.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scroll-watcher"></div>
+      <div class="box red" data-aos="fade-in"><h1>Red</h1></div>
+      <div class="box blue"><h1>Blue</h1></div>
+      <div class="box green" data-aos="fade-in"><h1>Green</h1></div>
+      <div class="box yellow">
+        <h1>Yellow</h1>
+      </div>
+      <div class="box pink"><h1>pink</h1></div>
+    </div>
+
+    <script src="./scrol.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 700
+      });
+    </script>
+  </body>
+</html>
