@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    margin: 2rem;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.lgn-imgs {
+    display: flex;
+}
+
+.lgn-imgs img{
+    height: 550px;
+}
+
+.lgn-imgs .android-img {
+    position: absolute;
+    z-index: -2;
+}
+
+.lgn-imgs .iphone-img {
+    position: relative;
+    width: 380px;
+    z-index: -1;
+    top: 20px;
+    left: 50px;
+}
+
+.main-sec {
+    margin: 2rem 0 0 0.5rem;
+}
+
+.info-enter {
+    border: 1px solid lightgray;
+    height: 24rem;
+    width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-enter img{
+    height: 50px;
+    margin: 3rem 0 2rem 0;
+}
+
+.info-enter .input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-enter .input-section > input, button {
+    margin: 0.3rem;
+    padding: 0.5rem 5rem 0.5rem 0.4rem;
+} 
+.info-enter .inp{
+    border: 1px solid lightgray;
+}
+.info-enter .input-section button {
+    background-color: rgb(115, 210, 248);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: none;
+} 
+
+.info-enter h5 {
+    font-size: 12px;
+    font-weight: 400;
+}
+.log-fb{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0.5rem 0;
+}
+.log-fb img {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0 10px ;
+}
+
+.log-fb .fab-link a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+
+.forgot-pass a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.no-acc {
+    border: 1px solid lightgray;
+    width: 20rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-acc span a{
+    text-decoration: none;
+    color: rgb(1, 152, 212);
+    font-weight: 600;
+}
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+.get-app h3 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.get-app-img {
+    display: flex;
+    align-items: center;
+}
+.get-app-img .google-badge {
+    height: 60px;
+}
+.get-app-img .micro-badge {
+    height: 40px ;
+}
+
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.footer .footer-links a {
+    padding: 0 0.5rem;
+    font-size: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.footer .footer-c {
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-c .opt {
+    color: gray;
+    margin-right: 10px;
+    border: none;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer .footer-c .para{
+    color: gray;
+    font-size: 14px;
+}
