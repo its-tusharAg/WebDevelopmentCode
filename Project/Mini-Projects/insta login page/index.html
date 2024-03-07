@@ -8,54 +8,57 @@
   </head>
   <body>
     <div class="container">
-      <div class="lgn-imgs">
-        <div class="android-img">
-          <img src="./img/android-phn-img.png" alt="android phone img" />
+      <div class="main">
+        <div class="lgn-imgs">
+          <div class="android-img">
+            <img src="./img/Snapshot_3.PNG" alt="android phone img" />
+          </div>
+          <div class="iphone-img">
+            <img src="./img/Snapshot_4.PNG" alt="iphone phone img" />
+          </div>
         </div>
-        <div class="iphone-img">
-          <img src="./img/iphone-phn-img.png" alt="iphone phone img" />
-        </div>
-      </div>
-      <div class="main-sec">
-        <div class="info-enter">
-          <img src="./img/insta-name-logo.png" alt="logo" />
-          <form action="">
-            <div class="input-section">
-              <input
-                type="text"
-                placeholder="Phone number, usernmae or email address"
-              />
-              <input type="password" placeholder="Password" />
-              <button type="submit">Log in</button>
+        <div class="main-sec">
+          <div class="info-enter">
+            <img src="./img/insta-name-logo.png" alt="logo" />
+            <form action="">
+              <div class="input-section">
+                <input
+                  type="text" class="inp" 
+                  placeholder="Username"
+                />
+                <input type="password" class="inp"  placeholder="Password" />
+                <button type="submit">Log in</button>
+              </div>
+            </form>
+            <h5>OR</h5>
+            <div class="log-fb">
+                <div class="fab-logo">
+                    <img src="./img/facebook-logo.png" alt="fb-img" />
+                </div>
+                <div class="fab-link">
+                    <a href="#">Log in with Facebook</a>
+                </div>
             </div>
-          </form>
-          <h5>OR</h5>
-          <div class="log-fb">
-            <h4>
-              <a href="#"
-                ><img src="./img/facebook-logo.png" alt="fb-img" /> Log in with
-                Facebook</a
-              >
-            </h4>
+            <div class="forgot-pass">
+              <p><a href="#">Forgotten your password?</a></p>
+            </div>
           </div>
-          <div class="forgot-pass">
-            <p><a href="#">Forgotten your password?</a></p>
-          </div>
-        </div>
 
-        <div class="no-acc">
-          <h6>
-            Don't have an account? <span><a href="#">Sign up</a></span>
-          </h6>
-        </div>
-        <div class="get-app">
-          <h6>Get the app.</h6>
-          <div class="get-app-img">
-            <img src="./img/google-play-badge.png" alt="google badge" />
-            <img
-              src="./img/2560px-Get_it_from_Microsoft_Badge.svg.png"
-              alt="microsoft badge"
-            />
+          <div class="no-acc">
+            <p>
+              Don't have an account? <span><a href="#">Sign up</a></span>
+            </p>
+          </div>
+
+          <div class="get-app">
+            <h3>Get the app.</h3>
+            <div class="get-app-img">
+              <img class="google-badge" src="./img/google-play-badge.png" alt="google badge" />
+              <img class="micro-badge" 
+                src="./img/2560px-Get_it_from_Microsoft_Badge.svg.png"
+                alt="microsoft badge"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -63,26 +66,27 @@
       <div class="footer">
         <div class="footer-links">
           <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
-          <a href="#">Meta</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Jobs</a>
+          <a href="#">Help</a>
+          <a href="#">API</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Locations</a>
+          <a href="#">Instagram Lite</a>
+          <a href="#">Threads</a>
+          <a href="#">Contact uploading and non-users</a>
+          <a href="#">Meta Verified</a>
         </div>
         <div class="footer-c">
-            <select name="lang" id="lang">
-                <option value="eng-uk">English(UK)</option>
-                <option value="hindi">Hindi</option>
-                <option value="english-us">English(US)</option>
-                <option value="spanish">Spanish</option>
-            </select>
+          <select class="opt" name="lang" id="lang">
+            <option value="eng-uk">English(UK)</option>
+            <option value="hindi">Hindi</option>
+            <option value="english-us">English(US)</option>
+            <option value="spanish">Spanish</option>
+          </select>
+          <p class="para">© 2024 Instagram from Meta</p>
         </div>
       </div>
     </div>
