@@ -19,6 +19,7 @@ body {
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
   background-color: #fdf2e9;
+  overflow-x: hidden;
 }
 .main--nav{
   background-color: #fdf2e9;
@@ -367,14 +368,64 @@ section.about-section .container {
   margin: 4rem 0rem 4rem 0;
 }
 
-/* *********Cards************ */
+/* *********Courses************ */
 
-.card {
-  /* Set the desired height of the box */
-  overflow: hidden;
-  /* Ensure that the image doesn't overflow */
-  padding: 2px;
+section.course-section {
+  background-color: var(--light);
 }
+section.course-section .container {
+  margin: 3rem;
+  padding: 3rem ;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.course-section .container .course-into {
+  width: 55rem;
+  margin: 0 auto;
+}
+section.course-section .container .course-into span{
+  color: var(--secondary);
+}
+section.course-section .course-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+section.course-section .course-boxes .course-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23rem;
+  height: auto;
+  border: 2px solid lightgray;
+  /* border-radius: 20px; */
+  margin: 2rem 1rem;
+  background-color: white;
+  box-shadow: 0 0px 2px var(--primary);
+}
+
+section.course-section .course-boxes .course-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+}
+
+section.course-section .course-boxes .course-box > h5 {
+  padding: 0.3rem;
+}
+
+section.course-section .course-boxes .course-box > p {
+  padding: 0.5rem 1rem 2rem 1rem;
+}
+section.course-section .course-boxes .course-box img:hover{
+  transform: translateY(-0.6rem);
+}
+
 
 /* **********testimonials****** */
 
@@ -565,13 +616,13 @@ section.contact-section {
   /* margin: 2rem 0; */
 }
 
-.contact-heading h2,
-p {
+.contact-heading h2 {
   width: 40rem;
+  margin-bottom: 14px;
 }
 
-.contact-heading h2 {
-  margin-bottom: 14px;
+.contact-heading p {
+  width: 40rem;
 }
 
 .contact-section .contact-details {
