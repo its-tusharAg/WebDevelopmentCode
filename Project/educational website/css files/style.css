@@ -415,12 +415,15 @@ section.course-section .course-boxes .course-box img {
   padding: 1rem;
 }
 
-section.course-section .course-boxes .course-box > h5 {
+section.course-section .course-boxes .course-box .course-box-info > h5 {
   padding: 0.3rem;
+  color: black;
+  font-weight: 600;
 }
 
-section.course-section .course-boxes .course-box > p {
+section.course-section .course-boxes .course-box .course-box-info > p {
   padding: 0.5rem 1rem 2rem 1rem;
+  color: gray;
 }
 section.course-section .course-boxes .course-box img:hover{
   transform: translateY(-0.6rem);
