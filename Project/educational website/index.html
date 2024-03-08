@@ -14,81 +14,107 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./css files/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
- 
+
 <body>
   <!-- Home page code -->
-  <nav class="navbar navbar-expand-md navbar-light" id="home">
-    <div class="container" >
-      <div class="navbar-brand">Edge<span>Learn</span></div>
-      <div class="navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">AboutUs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Policy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+  <section class="main--nav">
+    <nav class="navbar navbar-expand-md navbar-light d-flex" id="home" data-aos="fade-down">
+      <div class="container">
+        <div class="navbar-brand">Edge<span>Learn</span></div>
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">AboutUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <button class="btn-1">Login</button>
+          <button class="btn-2">SignUp</button>
+        </div>
       </div>
-      <div class="navbar-nav ml-auto">
-        <button class="btn-1">Login</button>
-        <button class="btn-2">SignUp</button>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 a">
-          <h2 class="title">Edge<span>Learn</span></h2>
-          <p class="lead">
-            The Best Education Platform for <br />SAP Training
-          </p>
-          <button class="btn-1">Enroll Now</button>
-          <button class="btn-2">Demo</button>
-        </div>
-        <div class="col-md-6 b">
-          <img src="./img/about-us-img2.webp" class="img-fluid rounded-image" alt="Image" />
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 aa" data-aos="fade-right">
+            <h2 class="title">The Best Education Platform for <br />SAP Training</h2>
+            <p>
+              Grow your skills <br> Start by giving 5-10 minutes daily!
+            </p>
+            <div class="head--desc">The smart 365-days-per-year food subscription that will make you eat healthy again.
+              Tailored to your personal tastes and nutritional needs.</div>
+            <button class="btn-1">Enroll Now</button>
+            <button class="btn-2">Demo</button>
+          </div>
+          <div class="col-md-6 b" data-aos="fade-left">
+            <img src="./img/about-us-img2.webp" class="img-fluid rounded-image" alt="Image" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
 
+  <!-- infinite slider  -->
+  <section class="logos">
+    <div class="logos-slide">
+      <div>Best Platform</div>
+      <div>30M++</div>
+      <div>SAP Training</div>
+      <div>Trending Courses</div>
+      <div>Upcoming Courses</div>
+      <div>15K+ Reviews</div>
+      <div>Best Award</div>
+      <div>100+ Selection</div>
+      <div>200+ CEO's</div>
+      <div>Education</div>
+    </div>
+  </section>
+  <script>
+    let copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+  </script>
+
+
   <!-- news section -->
-  <section class="news-section">
+  <section class="news-setion">
     <div class="container">
-      <div class="row news-row">
-        <div class="col-fluid">
-          <h2 class="news-heading">Upcoming <span>Events</span></h2>
+      <h2 data-aos="fade-down">Upcoming <span>Events</span></h2>
+      <div class="news-boxes">
+        <div class="news-box news-box-1" data-aos="fade-right">
+          <h5>Lorem ipsum dolor sit amet consectetur</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, 
+          </p>
         </div>
-        <div class="col-md-4 left-col ms-auto">
-          <h4>SAP S4 Demo class</h4>
-          <p>SAP S4 Demo class Schidule this weak, Timing 8:00 AM-10:00 AM</p>
-        </div>
-        <div class="col-md-4 right-col ms-auto">
-          <h4>SAP S4 Demo class</h4>
-          <p>SAP S4 Demo class Schidule this weak, Timing 8:00 AM-10:00 AM</p>
+        <div class="news-box news-box-2" data-aos="fade-left">
+          <h5>Lorem ipsum dolor sit amet consectetur</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. delectus</p>
         </div>
       </div>
     </div>
+
   </section>
   <!-- about section -->
 
   <section class="about-section">
     <div class="container">
       <div class="row align-items-center about-section">
-        <div class="col-6 about-left">
+        <div class="col-6 about-left" data-aos="fade-right">
           <h6>ABOUT US</h6>
           <h2>Learn By Us, Grow With Us</h2>
           <p>
@@ -97,9 +123,9 @@
             omnis, tempore voluptate! Reiciendis accusamus odit soluta ea non
             quisquam, commodi quia.
           </p>
-          <button class="btn btn-primary">Get a Demo</button>
+          <button class="btn">Get a Demo</button>
         </div>
-        <div class="col-6 about-right">
+        <div class="col-6 about-right" data-aos="fade-left">
           <img class="about-us-img" src="./img/about-us-img2.webp" alt="" />
         </div>
       </div>
@@ -169,7 +195,7 @@
                 <h3 class="card__profession">Web designer</h3>
 
                 <a href="#" class="card__button">
-                  <i class="ri-chat-3-line"></i> <span  >Send Message</span>
+                  <i class="ri-chat-3-line"></i> <span>Send Message</span>
                 </a>
               </div>
             </div>
@@ -410,14 +436,14 @@
   <!-- ****chat side btn section***** -->
   <section class="msg-side-btn">
     <div class="msg-btn">
-      <a href="https://whatsapp.com/dl/"><img src="./img/icons8-instagram.svg" alt="" /></a>
+      <a href="https://whatsapp.com/dl/"><img src="./img/whatsapp-line.png" alt="" /></a>
     </div>
   </section>
 
   <!-- ****swip-up btn**** -->
   <section class="swip-up-section">
     <div class="swip-up-btn">
-      <a href="#home"><img src="./img/educutional_img1.jpg" alt="" /></a>
+      <a href="#home"><img src="./img/arrow-up-double-line.png" alt="" /></a>
     </div>
   </section>
 
@@ -435,7 +461,7 @@
           perspiciatis.
         </p>
       </div>
-      <div class="boxes contact-details">
+      <di class="boxes contact-details">
         <div class="phn-mail-box">
           <div class="box phn-box">
             <div class="phn-img">
@@ -462,66 +488,23 @@
             <button class="btn col-6 st-btn">Student form</button>
             <button class="btn col-6 tr-btn">Trainer form</button>
           </div>
+
+          <!-- yha se bhai -->
+          <!-- Student Page -->
           <div class="detail-form stud-page">
             <div class="form-msg">
               <h2>Book a Meeting</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quod recusandae veritatis eligendi ab, quidem vitae tempore
-                vel dicta in eaque esse, ipsa earum quae a neque minus iste!
-                Consequuntur.
-              </p>
-            </div>
-
-            <form action="https://formsubmit.co/officialtjtushar@gmail.com" target="_blank" method="POST">
-              <div class="contact-form">
-                <div class="fs-nme inp-detail">
-                  <label for="fst-nme">First Name</label>
-                  <input type="text" id="fst-nme" name="frs-name" required/>
-                </div>
-                <div class="ls-nme inp-detail">
-                  <label for="lst-nme">Last Name</label>
-                  <input type="text" id="lst-nme" name="lst-name" required/>
-                </div>
-                <div class="mail-id inp-detail">
-                  <label for="mle-nme">E-mail ID</label>
-                  <input type="email" id="mle-nme" name="email" required/>
-                </div>
-                <div class="phn-num inp-detail">
-                  <label for="con-num">Contact Number</label>
-                  <input type="text" id="con-num" name="phn-num" required/>
-                </div>
-                <div class="inp-detail course-select">
-                  <label for="std-course-option">Select Your course</label>
-                  <select name="Course" id="std-course-option" required>
-                    <option value="">Select your course</option>
-                    <option value="sap">SAP</option>
-                    <option value="abc">ABC</option>
-                    <option value="xyz">XYZ</option>
-                    <option value="nice">Nice</option>
-                  </select>
-                </div>
-                <button class="btn" type="submit" >Submit</button>
-              </div>
-            </form>
-          </div>
-
-          <!-- trainer-page -->
-          <div class="detail-form trainer-page hide">
-            <div class="form-msg">
-              <h2>Trainer page</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quod recusandae veritatis eligendi ab, quidem vitae tempore
-                vel dicta in eaque esse, ipsa earum quae a neque minus iste!
-                Consequuntur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod
+                recusandae veritatis eligendi ab, quidem vitae tempore vel dicta in
+                eaque esse, ipsa earum quae a neque minus iste! Consequuntur.
               </p>
             </div>
 
             <form action="./action.php">
               <div class="contact-form">
                 <div class="fs-nme inp-detail">
-                  <label for="fst-nme">First Name</label>
+                  <label for="fst-nme">First </label>
                   <input type="text" id="fst-nme" />
                 </div>
                 <div class="ls-nme inp-detail">
@@ -533,16 +516,8 @@
                   <input type="email" name="ml" id="mle-nme" />
                 </div>
                 <div class="phn-num inp-detail">
-                  <label for="lst-nme">Contact Number</label>
-                  <input type="text" id="lst-nme" />
-                </div>
-                <div class="company-nme inp-detail">
-                  <label for="lst-nme">Company Name</label>
-                  <input type="text" id="lst-nme" />
-                </div>
-                <div class="phn-num inp-detail">
-                  <label for="lst-nme">Contact Number</label>
-                  <input type="text" id="lst-nme" />
+                  <label for="phn-num">Contact Number</label>
+                  <input type="text" id="phn-num" />
                 </div>
                 <div class="inp-detail course-select">
                   <label for="std-course-option">Select Your course</label>
@@ -558,68 +533,141 @@
             </form>
           </div>
         </div>
-      </div>
-  </section>
 
+        <!-- Trainer Page -->
+        <div class="detail-form trainer-page hide">
+          <div class="form-msg">
+            <h2>Trainer page</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod
+              recusandae veritatis eligendi ab, quidem vitae tempore vel dicta in
+              eaque esse, ipsa earum quae a neque minus iste! Consequuntur.
+            </p>
+          </div>
+
+          <form action="./action.php">
+            <div class="contact-form">
+              <div class="fs-nme inp-detail">
+                <label for="fst-nme-trainer">First Name</label>
+                <input type="text" id="fst-nme-trainer" />
+              </div>
+              <div class="ls-nme inp-detail">
+                <label for="lst-nme-trainer">Last Name</label>
+                <input type="text" id="lst-nme-trainer" />
+              </div>
+              <div class="mail-id inp-detail">
+                <label for="mle-nme-trainer">E-mail ID</label>
+                <input type="email" name="ml" id="mle-nme-trainer" />
+              </div>
+              <div class="phn-num inp-detail">
+                <label for="phn-num-trainer">Contact Number</label>
+                <input type="text" id="phn-num-trainer" />
+              </div>
+              <div class="company-nme inp-detail">
+                <label for="company-nme">Company Name</label>
+                <input type="text" id="company-nme" />
+              </div>
+              <div class="phn-num inp-detail">
+                <label for="phn-num-trainer">Contact Number</label>
+                <input type="text" id="phn-num-trainer" />
+              </div>
+              <div class="inp-detail course-select">
+                <label for="trainer-course-option">Select Trainer's course</label>
+                <select name="sle" id="trainer-course-option">
+                  <option value="">Select trainer's course</option>
+                  <option value="sap">SAP</option>
+                  <option value="abc">ABC</option>
+                  <option value="xyz">XYZ</option>
+                  <option value="nice">Nice</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+
+  </section>
 
   <!-- ******Footer section****** -->
 
-  <section class="footer-section">
-    <div class="container footer-container">
-      <div class="col-3 info-footer">
-        <img src="./img/Colorful Shapes Header Banner.png" alt="" />
-        <p>
-          Learn by Us, Grow with us Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Explicabo, enim! Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Dignissimos, eos!
-        </p>
-      </div>
-      <div class="col-4 foot-imp-links">
-        <h2>Important Links</h2>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">TESTIMINIAL</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
-      <div class="col-4 foot-social">
-        <div class="contact">
-          <h2>Get In Touch</h2>
-          <ul>
-            <li>
-              <img src="./img/icons8-email-50.png" alt="" /> <br />
-              tjtushar7830@gmail.com
-            </li>
-            <li>
-              <img src="./img/icons8-phone-50.png" alt="" /> <br />7452981312
-            </li>
-          </ul>
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row" data-aos="fade-down">
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+              <p>Don’t miss any updates.</p>
+              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                <p class="mchimp-errmessage" style="display: none;"></p>
+                <p class="mchimp-sucmessage" style="display: none;"></p>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+              <ul class="list-unstyled f_list">
+                <li><a href="#">EdgeLearn</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Instructors</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+              style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+              <ul class="list-unstyled f_list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Term &amp; conditions</a></li>
+                <li><a href="#">Reporting</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Support Policy</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+              style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+              <div class="f_social_icon">
+                <a href="#" class="fab fa-facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="fab fa-twitter"><i class="ri-twitter-fill"></i></a>
+                <a href="#" class="fab fa-linkedin"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="fab fa-pinterest"><i class="ri-linkedin-fill"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="social-links">
-          <h2>Follow Us</h2>
-          <ul>
-            <li>
-              <a href="#"><img src="./img/icons8-instagram.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"></a><img src="./img/icons8-linkedin.svg" alt="" />
-            </li>
-            <li>
-              <a href="#"><img src="./img/icons8-twitterx (1).svg" alt="" /></a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div class="footer_bg">
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
       </div>
     </div>
-  </section>
 
-  <script src="./js files/script.js"></script>
+  </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 260,
+      duration: 700
+    });
+  </script>
 </body>
 
 </html>
