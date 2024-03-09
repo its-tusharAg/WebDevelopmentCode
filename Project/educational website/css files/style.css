@@ -769,7 +769,7 @@ section.contact-section .container {
 .cn-form {
   background-color: white;
   margin: 1.3rem 1.3rem 0rem 0;
-  padding: 1rem 2rem 10rem 2rem;
+  padding: 1rem 2rem 3rem 2rem;
   text-align: center;
   width: 50rem;
   box-shadow: 0 1px 1px gray;
@@ -853,10 +853,48 @@ section.contact-section .container {
 }
 
 .cn-form .teacher-page .contact-form .inp-detail select {
- 
   padding: 0.4rem 0.5rem;
   width: 15rem;
 }
+
+.cn-form .teacher-page .contact-form .exp-time {
+  display: flex;
+  justify-content: center;
+}
+
+.cn-form .teacher-page .contact-form .exp-time .experience,
+.pref-time {
+  width: 15rem;
+}
+
+.cn-form .teacher-page .contact-form .exp-time .experience h5 {
+  /* width: 15rem; */
+}
+
+.cn-form .teacher-page .contact-form .exp-time .experience .exp-col {
+  display: flex;
+  justify-content: center;
+}
+
+.cn-form .teacher-page .contact-form .exp-time .experience .exp-col .exp {
+  margin: 0rem 0.6rem 0 0.6rem;
+}
+
+.cn-form .teacher-page .contact-form .exp-time .ext-tm-common h5 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: gray;
+}
+
+.cn-form .teacher-page .contact-form .exp-time .pref-time .p-time{
+  margin-bottom: 7px;
+}
+
+
+input[type=radio] {
+  accent-color: var(--primary);
+}
+
 
 section.contact-section .contact-details {
   width: 70rem;
@@ -872,9 +910,11 @@ section.contact-section .contact-details {
   padding: 0.5rem 2rem;
   border: 0;
   border-radius: 0;
-  margin: 3rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
-
+.cn-form .teacher-page .contact-form button{
+  margin: 0rem 0 0 0;
+}
 .hide {
   display: none
 }

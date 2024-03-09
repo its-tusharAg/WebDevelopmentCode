@@ -547,8 +547,8 @@
     <section class="contact-section">
       <div class="container">
         <div class="contact-heading">
-          <h2>CONTACT US ABOUT HUBSPOT'S SOFTWARE</h2>
-          <p>
+          <h2 data-aos="fade-down">CONTACT US ABOUT HUBSPOT'S SOFTWARE</h2>
+          <p data-aos="fade-down">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             cum error culpa quis illo est aut? Ex dignissimos tempore corrupti,
             corporis ea non omnis commodi quae minus facere suscipit
@@ -556,7 +556,7 @@
           </p>
         </div>
         <div class="boxes contact-details">
-          <div class="phn-mail-box">
+          <div class="phn-mail-box" data-aos="fade-right">
             <div class="box phn-box">
               <div class="phn-img">
                 <img src="./img/call-icon.png " alt="error" />
@@ -577,15 +577,15 @@
               </div>
             </div>
           </div>
-          <div class="cn-form">
+          <div class="cn-form" data-aos="fade-left">
             <div class="switch-btn">
-              <button class="btn st-btn">Student form</button>
-              <button class="btn tr-btn">Trainer form</button>
+              <button id="stud-btn" class="btn st-btn">Student form</button>
+              <button id="train-btn" class="btn tr-btn">Trainer form</button>
             </div>
 
             <!-- yha se bhai -->
             <!-- Student Page -->
-            <div class="detail-form stud-page hide">
+            <div id="std-form" class="detail-form stud-page">
               <div class="form-msg">
                 <h2>Book a <span>Meeting</span></h2>
                 <p>
@@ -632,65 +632,83 @@
                 </div>
               </form>
             </div>
-         
 
-          <!-- Trainer Page -->
-          <div class="detail-form teacher-page">
-            <div class="form-msg">
-              <h2>Book a <span>Meeting</span></h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quod recusandae veritatis eligendi ab, quidem vitae tempore
-                vel dicta in eaque esse, ipsa earum quae a neque minus iste!
-                Consequuntur.
-              </p>
-            </div>
-
-            <form action="./action.php">
-              <div class="contact-form">
-                <div class="nme-phn form-detail">
-                  <div class="fs-nme inp-detail">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" />
-                  </div>
-                  <div class="phn-num inp-detail">
-                    <label for="phn-num">Phone Number*</label>
-                    <input type="text" id="phn-num" />
-                  </div>
-                </div>
-                <div class="mail-course form-detail">
-                  <div class="mail-id inp-detail">
-                    <label for="mle-nme">Mail*</label>
-                    <input type="email" name="ml" id="mle-nme" />
-                  </div>
-                  <div class="inp-detail course-select">
-                    <label for="std-course-option">Select Your course</label>
-                    <select name="sle" id="std-course-option">
-                      <option value="">Select your course</option>
-                      <option value="sap">SAP</option>
-                      <option value="abc">ABC</option>
-                      <option value="xyz">XYZ</option>
-                      <option value="nice">Nice</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="exp-time form-detail">
-                  <div class="experience">
-                    <h5>Experience (In Years)</h5>
-                    <input id="0" type="radio" name="1">
-                    <label for="0">0-2</label>
-                    <input id="2" type="radio" name="1">
-                    <label for="2">2-5</label>
-                    <input id="3" type="radio" name="1">
-                    <label for="3">5+</label>
-                  </div>
-                </div>
-                
-                <div><button class="btn">Submit</button></div>
+            <!-- Trainer Page -->
+            <div id="trai-form" class="detail-form teacher-page hide">
+              <div class="form-msg">
+                <h2>Book a <span>Meeting</span></h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  quod recusandae veritatis eligendi ab, quidem vitae tempore
+                  vel dicta in eaque esse, ipsa earum quae a neque minus iste!
+                  Consequuntur.
+                </p>
               </div>
-            </form>
-          </div> 
-        </div>
+
+              <form action="./action.php">
+                <div class="contact-form">
+                  <div class="nme-phn form-detail">
+                    <div class="fs-nme inp-detail">
+                      <label for="name">Name*</label>
+                      <input type="text" id="name" />
+                    </div>
+                    <div class="phn-num inp-detail">
+                      <label for="phn-num">Phone Number*</label>
+                      <input type="text" id="phn-num" />
+                    </div>
+                  </div>
+                  <div class="mail-course form-detail">
+                    <div class="mail-id inp-detail">
+                      <label for="mle-nme">Mail*</label>
+                      <input type="email" name="ml" id="mle-nme" />
+                    </div>
+                    <div class="inp-detail course-select">
+                      <label for="std-course-option">Select Your course</label>
+                      <select name="sle" id="std-course-option">
+                        <option value="">Select your course</option>
+                        <option value="sap">SAP</option>
+                        <option value="abc">ABC</option>
+                        <option value="xyz">XYZ</option>
+                        <option value="nice">Nice</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="exp-time form-detail">
+                    <div class="experience ext-tm-common">
+                      <h5>Experience (In Years)</h5>
+                      <div class="exp-col">
+                        <div class="exp et-com">
+                          <input id="0" type="radio" name="1" />
+                          <label for="0">0-2</label>
+                        </div>
+                        <div class="exp et-com">
+                          <input id="1" type="radio" name="1" />
+                          <label for="1">2-5</label>
+                        </div>
+                        <div class="exp et-com">
+                          <input id="2" type="radio" name="1" />
+                          <label for="2">5+</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="pref-time ext-tm-common">
+                      <h5>Prefeared Time</h5>
+                      <div class="p-time et-com">
+                        <input id="mrg" type="radio" name="2" />
+                        <label for="mrg">Morning (6AM - 10AM)</label><br />
+                      </div>
+                      <div class="p-time et-com">
+                        <input id="eve" type="radio" name="2" />
+                        <label for="eve">Evening (6PM - 10PM)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div><button class="btn">Submit</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -812,16 +830,16 @@
       </div>
     </footer>
 
+    <script src="./js files/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 260,
+        offset: 250,
         duration: 700,
       });
     </script>
