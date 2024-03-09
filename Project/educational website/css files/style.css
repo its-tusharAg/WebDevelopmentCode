@@ -851,6 +851,13 @@ section.contact-section .container {
   box-shadow: 0 1px 1px gray;
   color: rgb(71, 71, 71);
 }
+
+.cn-form .teacher-page .contact-form .inp-detail select {
+ 
+  padding: 0.4rem 0.5rem;
+  width: 15rem;
+}
+
 section.contact-section .contact-details {
   width: 70rem;
   position: relative;
