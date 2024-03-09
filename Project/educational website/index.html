@@ -635,7 +635,7 @@
          
 
           <!-- Trainer Page -->
-          <div class="detail-form stud-page">
+          <div class="detail-form teacher-page">
             <div class="form-msg">
               <h2>Book a <span>Meeting</span></h2>
               <p>
@@ -648,36 +648,44 @@
 
             <form action="./action.php">
               <div class="contact-form">
-                <div class="nme form-detail">
+                <div class="nme-phn form-detail">
                   <div class="fs-nme inp-detail">
-                    <label for="fst-nme">First Name*</label>
-                    <input type="text" id="fst-nme" />
-                  </div>
-                  <div class="ls-nme inp-detail">
-                    <label for="lst-nme">Last Name*</label>
-                    <input type="text" id="lst-nme" />
-                  </div>
-                </div>
-                <div class="mail-phnNum form-detail">
-                  <div class="mail-id inp-detail">
-                    <label for="mle-nme">Mail*</label>
-                    <input type="email" name="ml" id="mle-nme" />
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" />
                   </div>
                   <div class="phn-num inp-detail">
                     <label for="phn-num">Phone Number*</label>
                     <input type="text" id="phn-num" />
                   </div>
                 </div>
-                <div class="inp-detail course-select">
-                  <label for="std-course-option">Select Your course</label>
-                  <select name="sle" id="std-course-option">
-                    <option value="">Select your course</option>
-                    <option value="sap">SAP</option>
-                    <option value="abc">ABC</option>
-                    <option value="xyz">XYZ</option>
-                    <option value="nice">Nice</option>
-                  </select>
+                <div class="mail-course form-detail">
+                  <div class="mail-id inp-detail">
+                    <label for="mle-nme">Mail*</label>
+                    <input type="email" name="ml" id="mle-nme" />
+                  </div>
+                  <div class="inp-detail course-select">
+                    <label for="std-course-option">Select Your course</label>
+                    <select name="sle" id="std-course-option">
+                      <option value="">Select your course</option>
+                      <option value="sap">SAP</option>
+                      <option value="abc">ABC</option>
+                      <option value="xyz">XYZ</option>
+                      <option value="nice">Nice</option>
+                    </select>
+                  </div>
                 </div>
+                <div class="exp-time form-detail">
+                  <div class="experience">
+                    <h5>Experience (In Years)</h5>
+                    <input id="0" type="radio" name="1">
+                    <label for="0">0-2</label>
+                    <input id="2" type="radio" name="1">
+                    <label for="2">2-5</label>
+                    <input id="3" type="radio" name="1">
+                    <label for="3">5+</label>
+                  </div>
+                </div>
+                
                 <div><button class="btn">Submit</button></div>
               </div>
             </form>
