@@ -387,6 +387,8 @@ section.about-section .container {
 
 section.course-section {
   background-color: var(--light);
+     display: flex;
+    justify-content: center; 
 }
 
 section.course-section .container {
