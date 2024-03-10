@@ -35,18 +35,3 @@ stBtn.addEventListener("click", () => {
 
 // let copy = document.querySelector(".logos-slide").cloneNode(true);
 // document.querySelector(".logos").appendChild(copy);
-
-// js for form
-// let trBtn = document.querySelector("#train-btn");
-// let strBtn = document.querySelector("#stud-btn");
-// let stdForm = document.querySelector("#std-form");
-// let trForm = document.querySelector("#trai-form");
-
-// trBtn.addEventListener("click", function() {
-//     trForm.classList.remove("hide");
-//     console.log("halwa");
-// })
-// strBtn.addEventListener("click", function() {
-//     // trForm.classList.remove("hide");
-//     console.log("halwa");
-// })
