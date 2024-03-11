@@ -6,6 +6,10 @@
   --ternary: #898989;
   --light2: #fdf2e9;
   --light: #fff8f0;
+
+  --container-color: hsl(0, 0%, 100%);
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
 }
 
 html {
@@ -13,17 +17,18 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
-  background: whitesmoke;
-  font-family: "Rubik", sans-serif;
+  background: #fbfbfb;
   scroll-behavior: smooth;
-  background-color: var(--light);
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+
+  font-size: var(--normal-font-size);
 }
 
 .main--nav {
@@ -41,7 +46,7 @@ body {
 }
 
 .navbar-brand {
-  font-family: sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 800;
   margin-right: auto;
   /* Push the brand/logo to the left */
@@ -135,15 +140,18 @@ body {
   height: 30rem;
 }
 
-.aa h2,
-.aa p {
+.aa h2 {
   color: black;
   font-size: 2.2rem;
-  font-family: sans-serif;
   font-weight: 1000;
   /* line-height: 6rem; */
   opacity: 0.8;
+  margin-bottom: 0.6rem;
+}
 
+.aa p {
+  font-family: 'lato', sans-serif;
+  ;
 }
 
 .head--desc {
@@ -151,7 +159,7 @@ body {
   font-weight: 400;
   color: gray;
   margin-bottom: 2rem;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 /* .a p {
@@ -333,6 +341,7 @@ section.news-setion .container .news-boxes .news-box>h5 {
 }
 
 section.news-setion .container .news-boxes .news-box>p {
+  font-family: 'lato', sans-serif;
   padding-bottom: 0.5rem;
   font-size: 12;
   font-weight: 400;
@@ -342,6 +351,7 @@ section.news-setion .container .news-boxes .news-box>p {
 
 section.about-section {
   background-color: var(--light);
+  margin-bottom: 5rem;
 }
 
 section.about-section .container {
@@ -367,6 +377,11 @@ section.about-section .container {
   margin-bottom: 1.2rem;
 }
 
+.about-left p {
+  font-family: 'lato', sans-serif;
+  color: var(--ternary);
+}
+
 .about-left button {
   margin-top: 1.2rem;
   /* border: 2px solid var(--primary); */
@@ -387,8 +402,8 @@ section.about-section .container {
 
 section.course-section {
   background-color: var(--light);
-     display: flex;
-    justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 
 section.course-section .container {
@@ -404,10 +419,15 @@ section.course-section .container .course-info {
   margin: 0 auto;
 }
 
-section.course-section .container .course-info>h2 {
+section.course-section .container .course-info h2 {
   color: black;
   font-weight: 600;
   font-size: 35px;
+}
+
+section.course-section .container .course-info p {
+  font-family: 'lato', sans-serif;
+  color: var(--ternary);
 }
 
 section.course-section .container .course-info span {
@@ -447,7 +467,8 @@ section.course-section .course-boxes .course-box .course-box-info>h5 {
   font-weight: 600;
 }
 
-section.course-section .course-boxes .course-box .course-box-info>p {
+section.course-section .course-boxes .course-box .course-box-info p {
+  font-family: 'lato', sans-serif;
   padding: 0.5rem 1rem 2rem 1rem;
   color: gray;
 }
@@ -888,7 +909,7 @@ section.contact-section .container {
   color: gray;
 }
 
-.cn-form .teacher-page .contact-form .exp-time .pref-time .p-time{
+.cn-form .teacher-page .contact-form .exp-time .pref-time .p-time {
   margin-bottom: 7px;
 }
 
@@ -914,256 +935,16 @@ section.contact-section .contact-details {
   border-radius: 0;
   margin: 4rem 0 0 0;
 }
-.cn-form .teacher-page .contact-form button{
+
+.cn-form .teacher-page .contact-form button {
   margin: 0rem 0 0 0;
 }
+
 .hide {
   display: none
 }
 
 /* ******footer code***** */
-
-
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
-
-/*=============== VARIABLES CSS ===============*/
-:root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /* --first-color: hsl(230, 100%, 50%);
-  --second-color: hsl(150, 100%, 38%);
-  --title-color: hsl(230, 24%, 12%);
-  --text-color: hsl(230, 4%, 60%);
-  /* --gray-color: hsl(230, 24%, 88%); */
-  /* --border-color: hsl(230, 4%, 92%); */
-  /* --body-color: hsl(230, 100%, 98%); */
-  --container-color: hsl(0, 0%, 100%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Syne", sans-serif;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-}
-
-/*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-}
-
-.courses-container a {
-  text-decoration: none;
-}
-
-.courses-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/*=============== CARD ===============*/
-.courses-container {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 7rem;
-
-  .clip-path-polygon {
-    clip-path: polygon(0% 0%, 50% 50%, 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  /* background: url(original-35023e0f6547509ed29dcce92115ccc3.png); */
-}
-
-.con-header {
-  font-family: var(--body-font);
-  font-size: 40px;
-}
-
-.card__article {
-  position: relative;
-  /* align-self: flex-end; */
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-  border-bottom: 2px solid black;
-  border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-}
-
-.card__profile,
-.card__mask {
-  width: 100px;
-  height: 100px;
-  background-color: var(--gray-color);
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.card__profile img,
-.card__mask img {
-  width: 95px;
-}
-
-.card__profile {
-  border: 4px solid var(--container-color);
-  z-index: 5;
-  transition: opacity 0.4s, transform 0.4s;
-}
-
-.card__tooltip {
-  position: absolute;
-  bottom: -2rem;
-  padding-bottom: 5rem;
-  transition: opacity 0.4s, bottom 0.4s cubic-bezier(0.6, -0.5, 0.3, 1.5);
-  pointer-events: none;
-  opacity: 0;
-}
-
-.card__content {
-  position: relative;
-  width: calc(100vw - 3rem);
-  background-color: var(--container-color);
-  box-shadow: 0 16px 32px hsla(230, 50%, 20%, 0.1);
-  padding: 2rem 1.5rem;
-  border-radius: 1.5rem;
-}
-
-.card__content::after {
-  content: "";
-  width: 32px;
-  height: 32px;
-  background-color: var(--container-color);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -0.75rem;
-  margin-inline: auto;
-  border-radius: 0.25rem;
-  rotate: 45deg;
-}
-
-.card-body a {
-  text-decoration: none;
-  color: white;
-  border: 2px solid white;
-  padding: 0.4rem;
-  border-radius: 14px;
-}
-
-.s {
-  background-color: black;
-}
-
-.card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.card__header span {
-  color: var(--title-color);
-  font-weight: 500;
-}
-
-.card__social {
-  display: flex;
-  column-gap: 0.75rem;
-}
-
-.card__social a {
-  font-size: 1.25rem;
-  color: var(--title-color);
-}
-
-.card__image {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  margin: 0 auto 1rem;
-}
-
-.card__status {
-  width: 12px;
-  height: 12px;
-  background-color: var(--second-color);
-  position: absolute;
-  top: 0.5rem;
-  right: 0.75rem;
-  border-radius: 50%;
-  border: 2px solid var(--container-color);
-}
-
-.card__data {
-  text-align: center;
-}
-
-.card__name {
-  font-size: var(--h2-font-size);
-  color: var(--title-color);
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.card__profession {
-  font-size: var(--normal-font-size);
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-
-.card__button {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  color: var(--first-color);
-  font-weight: 500;
-}
-
-.card__button i {
-  font-size: 1.25rem;
-}
-
-/* Scale profile image */
-.card__article:hover .card__profile {
-  transform: scale(0.8);
-  opacity: 0.7;
-}
-
-/* Show tooltip card */
-.card__article:hover .card__tooltip {
-  opacity: 1;
-  pointer-events: initial;
-  bottom: 4rem;
-}
-
-.f {
-  display: flex;
-  justify-content: space-around;
-}
-
-.col-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2rem;
-}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
@@ -1178,9 +959,7 @@ body {
 /* FOOTER */
 /**************************/
 /* footer section start */
-body {
-  background: #fbfbfd;
-}
+
 
 .new_footer_area {
   background: #fbfbfd;
