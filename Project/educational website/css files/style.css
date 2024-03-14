@@ -40,18 +40,13 @@ body {
 .navbar {
   width: 90%;
   background-color: var(--light);
-  margin: 2rem auto;
-  padding: 2rem;
-  /* border-bottom: 1px solid black; */
+  margin: auto;
+  padding: 1rem 1rem 0 1rem;
 }
 
-.navbar-brand {
-  /* font-family: "Poppins", sans-serif; */
-  font-weight: 800;
-  margin-right: auto;
-  /* Push the brand/logo to the left */
-  margin-left: auto;
-  /* Push the brand/logo to the right */
+.navbar-brand img {
+  height: 100px;
+  /* margin-top: -10px; */
 }
 
 .navbar-collapse ul li a {
@@ -63,7 +58,6 @@ body {
 }
 
 .nav-link:hover {
-  /* font-weight: 500; */
   color: #e67e22;
 }
 
@@ -71,7 +65,7 @@ body {
   /* border:none; */
 }
 
-.navbar-nav.ml-auto .btn-2 {
+.navbar-nav.ml-auto .nav-btn {
   padding: 8px 16px;
   font-size: 16px;
   border: none;
@@ -80,7 +74,8 @@ body {
   /* Semi-rounded corners for SignUp button */
   transition: all 0.3s ease;
   margin-right: 10px;
-  color: white;
+  color: var(--light);
+  background-color: var(--primary);
   /* Margin between buttons */
 }
 
@@ -116,13 +111,6 @@ body {
   /* border: 2px solid black; */
 }
 
-.section {
-  padding: 50px 0;
-  background-color: var(--light);
-  /* Light gray background color */
-
-}
-
 .rounded-image {
   border-radius: 20px;
   /* Adjust border radius for the image */
@@ -134,32 +122,40 @@ body {
   align-items: center;
 }
 
+.title {
+  color: black;
+  position: relative;
+  transition: all 0.9s ease;
+  top: -28px;
+  font-weight: 1000;
+  margin-top: -2rem;
+}
+.aa .title-para{
+  margin-bottom: 30px;
+}
+.aa h1 span {
+  color: var(--secondary);
+}
+
+.aa p {
+  font-family: 'lato', sans-serif;
+}
+
 .b img {
   /* padding: 4rem; */
   margin-left: 7.5rem;
   height: 30rem;
 }
 
-.aa h2 {
-  color: black;
-  font-size: 2.2rem;
-  font-weight: 1000;
-  /* line-height: 6rem; */
-  opacity: 0.8;
-  margin-bottom: 0.6rem;
-}
-
-.aa p {
-  font-family: 'lato', sans-serif;
-  ;
-}
-
 .head--desc {
   font-size: 18px;
   font-weight: 400;
   color: gray;
-  margin-bottom: 2rem;
+  margin: -25px 0 1rem 0;
   /* font-family: sans-serif; */
+}
+.head--desc p{
+  line-height: 24px;
 }
 
 /* .a p {
@@ -187,14 +183,14 @@ body {
 .btn-2 {
   background: transparent;
   background-color: var(--primary);
-  padding: 0.5rem;
-  margin-left: 2rem;
+  padding: 0.6rem 1rem;
+  /* margin-left: 2rem; */
   color: white;
   font-weight: bold;
   /* border: 5px solid #6c6c6c; */
   transition: all 0.3s ease;
   border-radius: 4px;
-  width: 100px;
+  width: 150px;
 }
 
 .btn-2:hover {
@@ -210,11 +206,6 @@ body {
   border-bottom-right-radius: 50%;
 }
 
-.title {
-  position: relative;
-  transition: all 0.9s ease;
-}
-
 .title:hover::after {
   content: "";
   position: absolute;
@@ -228,11 +219,6 @@ body {
   /* Change this to the color you want for the underline */
 }
 
-.a h2 span {
-  color: black;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-}
 
 .navbar-brand span {
   color: black;
