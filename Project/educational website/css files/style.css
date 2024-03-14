@@ -70,7 +70,7 @@ body {
   font-size: 16px;
   border: none;
   /* No border by default */
-  border-radius: 4px;
+  border-radius: 25px;
   /* Semi-rounded corners for SignUp button */
   transition: all 0.3s ease;
   margin-right: 10px;
@@ -87,15 +87,7 @@ body {
   border: 2px solid black;
 }
 
-.btn-2 {
-  background-color: #e67e22;
-  /* Green color for SignUp button */
-  color: #fff;
-  /* White text color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Add elevation */
-  border: 2px solid transparent;
-}
+
 
 .btn-1:hover {
   /* background-color: ; */
@@ -104,12 +96,7 @@ body {
   /* Change text color on hover */
 }
 
-.btn-2:hover {
-  /* transform: translateY(-2px); Move button up on hover */
-  background: #cf711f;
-  color: black;
-  /* border: 2px solid black; */
-}
+
 
 .rounded-image {
   border-radius: 20px;
@@ -164,7 +151,7 @@ body {
   letter-spacing: 2px;
 } */
 
-.btn-1 {
+/* .btn-1 {
   padding: 0.5rem;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -178,26 +165,25 @@ body {
   border: 3px solid gray;
   background: transparent;
   transform: scale(0.95);
-}
+} */
 
 .btn-2 {
-  background: transparent;
   background-color: var(--primary);
-  padding: 0.6rem 1rem;
-  /* margin-left: 2rem; */
+  padding: 0.6rem 2rem;
   color: white;
   font-weight: bold;
-  /* border: 5px solid #6c6c6c; */
   transition: all 0.3s ease;
-  border-radius: 4px;
-  width: 150px;
+  border-radius: 25px;
+  /* width: 150px; */
+  border: 2px solid transparent;
+  margin-top: 0.8rem;
 }
-
-.btn-2:hover {
-  background-color: var(--primary);
-  /* border: 5px solid #6c6c6c; */
-  color: white;
-}
+/* .btn-2:hover {
+  background: var(--secondary);
+  padding: 0.8rem 1rem;
+  width: 170px;
+  color: var(--light);
+} */
 
 .b img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 92%);
@@ -358,15 +344,19 @@ section.about-section .container {
 
 .about-left h2 {
   font-size: 2.7rem;
-  line-height: 3rem;
-  /* font-weight: 600; */
+  /* line-height: 3rem; */
+  font-weight: 500;
   margin-bottom: 1.2rem;
+  color: black;
 }
-
+.about-left h2 span{
+  color: var(--secondary);
+}
 .about-left p {
   font-family: 'lato', sans-serif;
   color: var(--ternary);
-}
+  line-height: 24px;
+  }
 
 .about-left button {
   margin-top: 1.2rem;
@@ -447,16 +437,19 @@ section.course-section .course-boxes .course-box img {
   padding: 1rem;
 }
 
-section.course-section .course-boxes .course-box .course-box-info>h5 {
+section.course-section .course-boxes .course-box .course-box-info h5 {
   padding: 0.3rem;
+  padding-left: 1.5rem;
   color: black;
   font-weight: 600;
+  text-align: left;
 }
 
 section.course-section .course-boxes .course-box .course-box-info p {
   font-family: 'lato', sans-serif;
-  padding: 0.5rem 1rem 2rem 1rem;
+  padding: 0.5rem 1rem 2rem 1.5rem;
   color: gray;
+  text-align: left;
 }
 
 section.course-section .course-boxes .course-box img:hover {
