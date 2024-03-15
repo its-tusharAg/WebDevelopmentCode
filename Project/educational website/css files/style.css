@@ -1208,12 +1208,28 @@ h6 {
   }
 }
 @media (max-width: 1024px) {
-  .main--nav .navbar .container .navbar-collapse{
+  #navbarNav > *{
     display: none;
   }
   .nav-btn{
     display: none;
   }
+  .navbar-brand img {
+    display: inline;
+    height: 4rem;
+    padding: 0;
+    /* margin: -5rem 0 0 -5rem; */
+  }
+  section.main--nav{
+    padding-top: 0;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar>.container{
+    padding: 0;
+  }
+  
   section.section .hero-page{
     margin-top: 1rem;
   }
@@ -1263,6 +1279,9 @@ h6 {
 }
 
 @media (max-width: 991px) {
+  .navbar-brand img {
+    margin: -4rem 0 0 -4rem;
+  }
   .b img{
     height: 20rem;
   }
@@ -1327,7 +1346,7 @@ h6 {
     align-items: center;
   }
   .b img{
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     /* height: 30rem; */
     padding: 0;
@@ -1361,5 +1380,12 @@ h6 {
   }
   .cn-form{
     display: none;
+  }
+
+  .footer-extra-links{
+    margin: 1rem;
+    margin-bottom: -10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
