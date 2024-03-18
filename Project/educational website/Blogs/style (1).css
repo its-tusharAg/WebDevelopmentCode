@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid  #e67e22;
+}
+
+h1, h2, h3 {
+    color: #e67e22;
+}
+
+.module {
+    background:;
+    color: #333;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.functional {
+    border-left: 4px solid  #e67e22;
+}
+
+.technical {
+    border-left: 4px solid  #e67e22;
+}
+
+.module ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.module li {
+    padding: 8px 0;
+    border-bottom: 1px solid  #e67e22;
+}
+
+.module li:last-child {
+    border: none;
+}
+
+.functional li:before {
+    content: "• ";
+    color:   #e67e22; /* Match the border color of the functional div for consistency */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.technical ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.technical li {
+    padding: 8px 0;
+    border-bottom: 1px solid  #e67e22;
+}
+
+.technical li:last-child {
+    border: none;
+}
+
+.technical li:before {
+    content: "▸";
+    color: #e67e22; /* A green color for differentiation */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Continue with the rest of your CSS */
+#sap-benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#sap-benefits h2 {
+    color: #333;
+    text-align: center;
+}
+
+.benefit {
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    color:black; /* SAP blue color for subheadings */
+}
+
+.benefit p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#sap-course-levels {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.level {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.level h3 {
+    color: #333;
+}
+
+#sap-course-levels h2 {
+    color:#e67e22;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sap-course-levels p {
+    color: #666;
+    line-height: 1.6;
+}
+
+#sap-sd {
+    background-color:#f5e4d5;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sap-sd h2 {
+    color: #e67e22;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sap-sd p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Class to apply animation */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+    opacity: 0; /* Start invisible */
+    animation-fill-mode: forwards; /* Retain the final keyframe state */
+}
+
+/* Optional: ensure visibility after animation for older browsers */
+.fade-in {
+    visibility: visible !important;
+}
+
+
+/* Add more styles as per your need */

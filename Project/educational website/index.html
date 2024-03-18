@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./css files/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -34,22 +35,22 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">AboutUs</a>
+              <a class="nav-link" href="#about-id">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
+              <a class="nav-link" href="#course-id">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Policy</a>
+              <a class="nav-link" href="#testi-id">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact-id">Contact</a>
             </li>
           </ul>
         </div>
         <div class="navbar-nav ml-auto">
           <!-- <button class="btn-1">Login</button> -->
-          <button class="nav-btn">Attand a Demo</button>
+          <button class="nav-btn"><a href="#contact-id">Book A Demo</a></button>
         </div>
       </div>
     </nav>
@@ -62,17 +63,17 @@
               Elevate your learning by<br />
               <span>SAP Advisor</span>
             </h1>
-              <p class="title-para">Are you ready to join on a journey toward becoming a proficient SAP professional?</p>
+            <p class="title-para">Are you ready to join on a journey toward becoming a proficient SAP professional?</p>
             <div class="head--desc">
               <p>
-                Enroll now in our comprehensive SAP SD training program. We're
+                Enroll now in our comprehensive SAP training program. We're
                 currently accepting new admissions. Gain essential skills and
-                expertise to excel in your SAP SD career. Join us today to
+                expertise to excel in your SAP career. Join us today to
                 embark on your journey to success
               </p>
             </div>
             <!-- <button class="btn-1">Enroll Now</button> -->
-            <button class="btn-2">Demo</button>
+            <button class="btn-2"><a href="https://wa.me/+918830809578" target="_blank">Demo</a></button>
           </div>
           <div class="col-md-6 b" data-aos="fade-left">
             <img src="./img/about-us-img2.webp" class="img-fluid rounded-image" alt="Image" />
@@ -85,7 +86,7 @@
   <!-- infinite slider  -->
   <section class="logos">
     <div class="logos-slide">
-      <div>Best Platform</div>
+      <!-- <div>Best Platform</div>
       <div>30M++</div>
       <div>SAP Training</div>
       <div>Trending Courses</div>
@@ -94,7 +95,11 @@
       <div>Best Award</div>
       <div>100+ Selection</div>
       <div>200+ CEO's</div>
-      <div>Education</div>
+      <div>Education</div> -->
+      <div><i class="fa-regular fa-hand-point-right" style="color: #e67e22;"></i> SAP SD HANA Demo Coming Soon</div>
+      <div><i class="fa-regular fa-hand-point-right" style="color: #e67e22;"></i> SAP SD ECC Demo Coming Soon</div>
+      <div><i class="fa-regular fa-hand-point-right" style="color: #e67e22;"></i> SAP FICO Demo Coming Soon</div>
+      <div><i class="fa-regular fa-hand-point-right" style="color: #e67e22;"></i> SAP MM Demo Coming Soon</div>
     </div>
   </section>
   <script>
@@ -125,16 +130,20 @@
       </section> -->
   <!-- about section -->
 
-  <section class="about-section">
+  <section class="about-section" id="about-id">
     <div class="about-container">
       <div class="about-us">
         <div class="about-left" data-aos="fade-right">
           <h6>ABOUT US</h6>
-          <h2>Welcome to <span>SAP Adviser</span> </h2>
+          <h2>Welcome to <span>SAP Advisor</span> </h2>
           <p>
-            SAP Adviser is a leading institution specializing in SAP-SD training, renowned for its excellence in guiding individuals aspiring to become proficient SD consultants. Since its establishment in 2020, SAP Adviser has been dedicated to imparting knowledge of the highest caliber. At SAP Adviser, we are committed to investing time and resources to ensure that our training programs consistently provide in-depth and detailed training, explaining every topic with real-time scenarios.
+            SAP Advisor is a leading institution specializing in SAP training, renowned for its excellence in guiding
+            individuals aspiring to become proficient SAP consultants. Since its establishment in 2018, SAP Advisor has
+            been dedicated to imparting knowledge of the highest caliber. At SAP Advisor, we are committed to investing
+            time and resources to ensure that our training programs consistently provide in-depth and detailed training,
+            explaining every topic with real-time scenarios.
           </p>
-          <button class="btn-2">Connect with Us</button>
+          <button class="btn-2"><a href="#contact-id">Connect with Us</a></button>
         </div>
         <div class="about-right" data-aos="fade-left">
           <img class="about-us-img" src="./img/about-us-img2.webp" alt="" />
@@ -346,12 +355,15 @@
     </div>
   </div> -->
 
-  <section class="course-section">
+  <section class="course-section" id="course-id">
     <div class="container">
       <div class="course-info">
         <h2 data-aos="fade-down">How I Can <span>Help You</span></h2>
         <p data-aos="fade-down">
-          Our courses are meticulously developed, drawing upon thorough research, careful curation, and validation by industry experts. Each course is thoughtfully designed to provide comprehensive knowledge and practical skills, ensuring our students receive the highest quality education tailored to meet industry standards and demands.
+          Our courses are meticulously developed, drawing upon thorough research, careful curation, and validation by
+          industry experts. Each course is thoughtfully designed to provide comprehensive knowledge and practical
+          skills, ensuring our students receive the highest quality education tailored to meet industry standards and
+          demands.
         </p>
       </div>
       <div class="course-boxes" data-aos="fade-up">
@@ -360,7 +372,9 @@
           <div class="course-box-info">
             <h5>SAD SD ECC</h5>
             <p>
-              Delve into SAP SD ECC with our comprehensive course. From managing sales orders to pricing and distribution, gain expertise in navigating the intricacies of SAP's Sales and Distribution module for seamless business operations.
+              Delve into SAP SD ECC with our comprehensive course. From managing sales orders to pricing and
+              distribution, gain expertise in navigating the intricacies of SAP's Sales and Distribution module for
+              seamless business operations.
             </p>
           </div>
         </div>
@@ -369,7 +383,9 @@
           <div class="course-box-info">
             <h5>SAP SD HANA</h5>
             <p>
-              Master the intricacies of SAP SD HANA through our focused course. Learn to optimize sales, pricing, billing, and distribution processes with the latest advancements in SAP HANA technology, ensuring maximum efficiency and productivity.
+              Master the intricacies of SAP SD HANA through our focused course. Learn to optimize sales, pricing,
+              billing, and distribution processes with the latest advancements in SAP HANA technology, ensuring maximum
+              efficiency and productivity.
             </p>
           </div>
         </div>
@@ -378,7 +394,9 @@
           <div class="course-box-info">
             <h5>SAP FICO</h5>
             <p>
-              Unlock the potential of SAP FICO with our specialized course. Dive into financial and controlling processes, mastering essential skills for effective management and decision-making within SAP's Finance and Controlling module.
+              Unlock the potential of SAP FICO with our specialized course. Dive into financial and controlling
+              processes, mastering essential skills for effective management and decision-making within SAP's Finance
+              and Controlling module.
             </p>
           </div>
         </div>
@@ -387,7 +405,9 @@
           <div class="course-box-info">
             <h5>SAP MM</h5>
             <p>
-              Embark on a journey to mastery with our SAP MM course. Explore the depths of Material Management, from procurement to inventory management, empowering you with essential skills for efficient supply chain operations.
+              Embark on a journey to mastery with our SAP MM course. Explore the depths of Material Management, from
+              procurement to inventory management, empowering you with essential skills for efficient supply chain
+              operations.
             </p>
           </div>
         </div>
@@ -396,16 +416,14 @@
   </section>
 
   <!-- testimonials -->
-  <section class="testiminial-section">
+  <!-- <section class="testiminial-section" id="testi-id">
     <div class="container testi-container">
       <div class="info-row">
         <h6 data-aos="fade-down">TESTIMONIALS</h6>
         <h2 data-aos="fade-down">Stories of <span>our Success</span></h2>
         <div class="info-para" data-aos="fade-down">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ad
-            nihil nemo ab doloribus quibusdam aliquid dolore quos, quisquam
-            placeat.
+            Sucess stories are nothing but a celebration of our Dedication, Determination and individual focus. Our trained fellows are the brand ambassadors at SAP Advisor.
           </p>
         </div>
       </div>
@@ -429,354 +447,375 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- ******bloges sections******* -->
+  <!-- codepen testiminial -->
 
-  <section class="blog-section">
-    <div class="container blog-container">
-      <div class="row heading-row">
-        <div class="blog-heading">
-          <h2 data-aos="fade-down">Blog and <span>Articles</span></h2>
-          <p data-aos="fade-down">
-            Designed to help individual business coaches improve their skills
-            and achieve success in their field.
+  <section class="testiminial-section" id="testi-id">
+    <div class="container testi-container">
+      <div class="info-row">
+        <h6 data-aos="fade-down">TESTIMONIALS</h6>
+        <h2 data-aos="fade-down">Stories of <span>our Success</span></h2>
+        <div class="info-para" data-aos="fade-down">
+          <p>
+            Sucess stories are nothing but a celebration of our Dedication, Determination and individual focus. Our
+            trained fellows are the brand ambassadors at SAP Advisor.
           </p>
         </div>
-      </div>
-
-      <div class="cards" data-aos="fade-up">
-        <div class="card">
-          <img class="blog-img" src="./img/cardImg-ph-1.png" alt="" />
-          <div class="blog-data">
-            <h5>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              a error iusto similique dignissimos Lorem, ipsum dolor.
-            </h5>
-            <div class="blog-tags">
-              <div class="tag">study</div>
-              <div class="tag">study</div>
-              <div class="tag">study</div>
+        <div class="testimonial-container" data-aos="fade-up">
+          <div class="progress-bar"></div>
+          <div class="fas fa-quote-right fa-quote"></div>
+          <div class="fas fa-quote-left fa-quote"></div>
+          <p class="testimonial">Very Nice institute, The trainer has explained each detail in depth. i could reach trainer whenever i needed his help. coming from a Non-IT background, It was a dream come true for me to join an MNC . Thank you again for all the effort !!</p>
+          <div class="user">
+            <img src="img/cartoom-img-2.jpg" alt="user" class="user-image">
+            <div class="user-details">
+              <h4 class="username">Amar Singh</h4>
+              <p class="role">Junior Consultant</p>
             </div>
-            <button class="btn">Click me!</button>
-          </div>
-        </div>
-        <div class="card">
-          <img class="blog-img" src="./img/cardImg-ph-1.png" alt="" />
-          <div class="blog-data">
-            <h5>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              a error iusto similique dignissimos Lorem, ipsum dolor.
-            </h5>
-            <div class="blog-tags">
-              <div class="tag">study</div>
-              <div class="tag">study</div>
-              <div class="tag">study</div>
-            </div>
-            <button class="btn">Click me!</button>
-          </div>
-        </div>
-        <div class="card">
-          <img class="blog-img" src="./img/cardImg-ph-1.png" alt="" />
-          <div class="blog-data">
-            <h5>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-              a error iusto similique dignissimos Lorem, ipsum dolor.
-            </h5>
-            <div class="blog-tags">
-              <div class="tag">study</div>
-              <div class="tag">study</div>
-              <div class="tag">study</div>
-            </div>
-            <button class="btn">Click me!</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ****chat side btn section***** -->
-  <section class="msg-side-btn">
-    <div class="msg-btn">
-      <a href="https://whatsapp.com/dl/"><img src="./img/whatsapp-line.png" alt="" /></a>
-    </div>
-  </section>
+        <!-- ******bloges sections******* -->
 
-  <!-- ****swip-up btn**** -->
-  <section class="swip-up-section">
-    <div class="swip-up-btn">
-      <a href="#home"><img src="./img/arrow-up-double-line.png" alt="" /></a>
-    </div>
-  </section>
-
-  <!-- contact us section -->
-
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-heading">
-        <h2 data-aos="fade-down">CONTACT US ABOUT HUBSPOT'S SOFTWARE</h2>
-        <p data-aos="fade-down">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          cum error culpa quis illo est aut? Ex dignissimos tempore corrupti,
-          corporis ea non omnis commodi quae minus facere suscipit
-          perspiciatis.
-        </p>
-      </div>
-      <div class="boxes contact-details">
-        <div class="phn-mail-box" data-aos="fade-right">
-          <div class="box phn-box">
-            <div class="phn-img">
-              <img src="./img/call-icon.png " alt="error" />
+        <section class="blog-section">
+          <div class="container blog-container">
+            <div class="row heading-row">
+              <div class="blog-heading">
+                <h2 data-aos="fade-down">Blog and <span>Articles</span></h2>
+                <p data-aos="fade-down">
+                  Designed to help individual business coaches improve their skills
+                  and achieve success in their field.
+                </p>
+              </div>
             </div>
-            <div class="phn-detail">
-              <h6>Call us directly at</h6>
-              <h4>7452981312</h4>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <div class="cards" data-aos="fade-up">
+              <div class="card">
+                <img class="blog-img" src="./img/hana.png" alt="" />
+                <div class="blog-data">
+                  <h5>
+                    Take yourself in to the world of SAP Opportunities & cherish them !!
+                  </h5>
+                  <div class="blog-tags">
+                    <div class="tag">SAP</div>
+                    <div class="tag">SD</div>
+                    <div class="tag">HANA</div>
+                  </div>
+                  <button class="btn"><a href="./Blogs/index (1).html" target="_blank">Read More</a> </button>
+                </div>
+              </div>
+              <div class="card">
+                <img class="blog-img" src="./img/fico.png" alt="" />
+                <div class="blog-data">
+                  <h5>
+                    HANA gives several advantages over ECC which ultimately improves the Scalability, Reliability & Efficiency .
+                  </h5>
+                  <div class="blog-tags">
+                    <div class="tag">TRAINING</div>
+                    <div class="tag">SALES</div>
+                    <div class="tag">FICO</div>
+                  </div>
+                  <button class="btn"><a href="./Blogs/index (1).html" target="_blank">Read More</a></button>
+                </div>
+              </div>
+              <div class="card">
+                <img class="blog-img" src="./img/mm.png" alt="" />
+                <div class="blog-data">
+                  <h5>
+                    Why to choose US and logo of the company
+                  </h5>
+                  <div class="blog-tags">
+                    <div class="tag">MM</div>
+                    <div class="tag">ECC</div>
+                    <div class="tag">PLACEMENT</div>
+                  </div>
+                  <button class="btn"><a href="./Blogs/index (1).html" target="_blank">Read More</a></button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="box mail-box">
-            <div class="mail-img">
-              <img src="./img/chat-icon.png" alt="" />
-            </div>
-            <div class="mail-detail">
-              <h6>Chat with us</h6>
-              <button class="">Chat with us</button>
-            </div>
+        </section>  
+
+        <!-- ****chat side btn section***** -->
+        <section class="msg-side-btn">
+          <div class="msg-btn">
+            <a href="https://wa.me/+918830809578" target="_blank"><img src="./img/whatsapp.svg" alt="" /></a>
           </div>
+        </section>
+
+        <!-- ****swip-up btn**** -->
+
+        <div id="progress">
+          <span id="progress-value"><i class="fa-solid fa-arrow-up fa-xs" style="color: #cf711f;"></i></span>
         </div>
-        <div class="cn-form" data-aos="fade-left">
-          <div class="switch-btn">
-            <button id="stud-btn" class="btn st-btn">Student form</button>
-            <button id="train-btn" class="btn tr-btn">Trainer form</button>
-          </div>
 
-          <!-- yha se bhai -->
-          <!-- Student Page -->
-          <div id="std-form" class="detail-form stud-page">
-            <div class="form-msg">
-              <h2>Book a <span>Meeting</span></h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quod recusandae veritatis eligendi ab, quidem vitae tempore
-                vel dicta in eaque esse, ipsa earum quae a neque minus iste!
-                Consequuntur.
+        <!-- contact us section -->
+
+        <section class="contact-section" id="contact-id">
+          <div class="container">
+            <div class="contact-heading">
+              <h2 data-aos="fade-down" id="contact-id">CONTACT US TO GRAB OUR ATTENTIONS</h2>
+              <p data-aos="fade-down">
+                You can submit your details via the student forms and we shall connect soon.
               </p>
             </div>
-
-            <form action="./action.php">
-              <div class="contact-form">
-                <div class="nme form-detail">
-                  <div class="fs-nme inp-detail">
-                    <label for="fst-nme">First Name*</label>
-                    <input type="text" id="fst-nme" />
+            <div class="boxes contact-details">
+              <div class="phn-mail-box" data-aos="fade-right">
+                <div class="box phn-box">
+                  <div class="phn-img">
+                    <img src="./img/call-icon.png " alt="error" />
                   </div>
-                  <div class="ls-nme inp-detail">
-                    <label for="lst-nme">Last Name*</label>
-                    <input type="text" id="lst-nme" />
-                  </div>
-                </div>
-                <div class="mail-phnNum form-detail">
-                  <div class="mail-id inp-detail">
-                    <label for="mle-nme">Mail*</label>
-                    <input type="email" name="ml" id="mle-nme" />
-                  </div>
-                  <div class="phn-num inp-detail">
-                    <label for="phn-num">Phone Number*</label>
-                    <input type="text" id="phn-num" />
+                  <div class="phn-detail">
+                    <h6>Call us directly at</h6>
+                    <h4>+91-8830809578</h4>
+                    <p> Why Not try for free counselling.</p>
                   </div>
                 </div>
-                <div class="inp-detail course-select">
-                  <label for="std-course-option">Select Your course</label>
-                  <select name="sle" id="std-course-option">
-                    <option value="">Select your course</option>
-                    <option value="sap">SAP</option>
-                    <option value="abc">ABC</option>
-                    <option value="xyz">XYZ</option>
-                    <option value="nice">Nice</option>
-                  </select>
+                <div class="box mail-box">
+                  <div class="mail-img">
+                    <img src="./img/chat-icon.png" alt="" />
+                  </div>
+                  <div class="mail-detail">
+                    <h6>Chat with us</h6>
+                    <button class=""><a href="https://wa.me/+918830809578" target="_blank">Chat with us</a> </button>
+                  </div>
                 </div>
-                <div><button class="btn">Submit</button></div>
               </div>
-            </form>
-          </div>
+              <div class="cn-form" data-aos="fade-left">
+                <div class="switch-btn">
+                  <button id="stud-btn" class="btn st-btn">Student form</button>
+                  <button id="train-btn" class="btn tr-btn">Trainer form</button>
+                </div>
 
-          <!-- Trainer Page -->
-          <div id="trai-form" class="detail-form teacher-page hide">
-            <div class="form-msg">
-              <h2>Book a <span>Meeting</span></h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                quod recusandae veritatis eligendi ab, quidem vitae tempore
-                vel dicta in eaque esse, ipsa earum quae a neque minus iste!
-                Consequuntur.
-              </p>
+                <!-- yha se bhai -->
+                <!-- Student Page -->
+                <div id="std-form" class="detail-form stud-page">
+                  <div class="form-msg">
+                    <h2>Enquiry <span>Form</span></h2>
+                    <p>
+                      Raise your Query by providing your basic details, Our team will contact and counsel you to achieve
+                      your dream !!
+                    </p>
+                  </div>
+
+                  <form action="https://formsubmit.co/advisorsap51@gmail.com" method="POST" target="_blank">
+                    <div class="contact-form">
+                      <div class="nme form-detail">
+                        <div class="fs-nme inp-detail">
+                          <label for="fst-nme">First Name*</label>
+                          <input type="text" id="fst-nme" name="First Name:" required />
+                        </div>
+                        <div class="ls-nme inp-detail">
+                          <label for="lst-nme">Last Name*</label>
+                          <input type="text" id="lst-nme" name="Last Name:" required />
+                        </div>
+                      </div>
+                      <div class="mail-phnNum form-detail">
+                        <div class="mail-id inp-detail">
+                          <label for="mle-nme">Mail*</label>
+                          <input type="email" name="E-Mail:" id="mle-nme" required />
+                        </div>
+                        <div class="phn-num inp-detail">
+                          <label for="phn-num">Phone Number*</label>
+                          <input type="text" id="phn-num" name="Phone Number:" required />
+                        </div>
+                      </div>
+                      <div class="inp-detail course-select">
+                        <label for="std-course-option">Select Your course</label>
+                        <select name="Intrested Course:" id="std-course-option">
+                          <option value="None">Select your course</option>
+                          <option value="SAP-ECC">SAP SD ECC</option>
+                          <option value="SAP-HANA">SAP SD HANA</option>
+                          <option value="SAP-FICO">SAP FICO</option>
+                          <option value="SAP-MM">SAP MM</option>
+                          <option value="SAP-MM">Others</option>
+                        </select>
+                      </div>
+                      <div><button class="btn">Submit</button></div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Trainer Page -->
+                <div id="trai-form" class="detail-form teacher-page hide">
+                  <div class="form-msg">
+                    <h2>Enquiry <span>Form</span></h2>
+                    <p>
+                      Raise your Query by providing your basic details, Our team will contact and counsel you to achieve
+                      your dream !!
+                    </p>
+                  </div>
+
+                  <form action="https://formsubmit.co/advisorsap51@gmail.com" method="POST" target="_blank">
+                    <div class="contact-form">
+                      <div class="nme-phn form-detail">
+                        <div class="fs-nme inp-detail">
+                          <label for="name">Name*</label>
+                          <input type="text" id="name" name="Teacher-Name:" required />
+                        </div>
+                        <div class="phn-num inp-detail">
+                          <label for="phn-num">Phone Number*</label>
+                          <input type="text" id="phn-num" name="Teacher-Phone Number:" required />
+                        </div>
+                      </div>
+                      <div class="mail-course form-detail">
+                        <div class="mail-id inp-detail">
+                          <label for="mle-nme">Mail*</label>
+                          <input type="email" name="Teacher-Email" id="mle-nme" required />
+                        </div>
+                        <div class="inp-detail course-select">
+                          <label for="std-course-option">Select Your course</label>
+                          <select name="Intrested Course:" id="std-course-option">
+                            <option value="None">Select your course</option>
+                            <option value="SAP-ECC">SAP SD ECC</option>
+                            <option value="SAP-HANA">SAP SD HANA</option>
+                            <option value="SAP-FICO">SAP FICO</option>
+                            <option value="SAP-MM">SAP MM</option>
+                            <option value="SAP-MM">Others</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="exp-time form-detail">
+                        <div class="experience ext-tm-common">
+                          <h5>Experience (In Years)</h5>
+                          <div class="exp-col">
+                            <div class="exp et-com">
+                              <input id="0" type="radio" name="Experience:" value="0-2" />
+                              <label for="0">0-2</label>
+                            </div>
+                            <div class="exp et-com">
+                              <input id="1" type="radio" name="Experience:" value="2-5" />
+                              <label for="1">2-5</label>
+                            </div>
+                            <div class="exp et-com">
+                              <input id="2" type="radio" name="Experience:" value="5+" />
+                              <label for="2">5+</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="pref-time ext-tm-common">
+                          <h5>Preferred Timing</h5>
+                          <div class="p-time et-com">
+                            <input id="mrg" type="radio" name="Preferred-Time" value="Morning" />
+                            <label for="mrg">Morning (6AM - 10AM)</label><br />
+                          </div>
+                          <div class="p-time et-com">
+                            <input id="eve" type="radio" name="Preferred-Time" value="Evening" />
+                            <label for="eve">Evening (6PM - 10PM)</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div><button class="btn">Submit</button></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-
-            <form action="./action.php">
-              <div class="contact-form">
-                <div class="nme-phn form-detail">
-                  <div class="fs-nme inp-detail">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" />
-                  </div>
-                  <div class="phn-num inp-detail">
-                    <label for="phn-num">Phone Number*</label>
-                    <input type="text" id="phn-num" />
-                  </div>
-                </div>
-                <div class="mail-course form-detail">
-                  <div class="mail-id inp-detail">
-                    <label for="mle-nme">Mail*</label>
-                    <input type="email" name="ml" id="mle-nme" />
-                  </div>
-                  <div class="inp-detail course-select">
-                    <label for="std-course-option">Select Your course</label>
-                    <select name="sle" id="std-course-option">
-                      <option value="">Select your course</option>
-                      <option value="sap">SAP</option>
-                      <option value="abc">ABC</option>
-                      <option value="xyz">XYZ</option>
-                      <option value="nice">Nice</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="exp-time form-detail">
-                  <div class="experience ext-tm-common">
-                    <h5>Experience (In Years)</h5>
-                    <div class="exp-col">
-                      <div class="exp et-com">
-                        <input id="0" type="radio" name="1" />
-                        <label for="0">0-2</label>
-                      </div>
-                      <div class="exp et-com">
-                        <input id="1" type="radio" name="1" />
-                        <label for="1">2-5</label>
-                      </div>
-                      <div class="exp et-com">
-                        <input id="2" type="radio" name="1" />
-                        <label for="2">5+</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="pref-time ext-tm-common">
-                    <h5>Prefeared Time</h5>
-                    <div class="p-time et-com">
-                      <input id="mrg" type="radio" name="2" />
-                      <label for="mrg">Morning (6AM - 10AM)</label><br />
-                    </div>
-                    <div class="p-time et-com">
-                      <input id="eve" type="radio" name="2" />
-                      <label for="eve">Evening (6PM - 10PM)</label>
-                    </div>
-                  </div>
-                </div>
-                <div><button class="btn">Submit</button></div>
-              </div>
-            </form>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- ******Footer section****** -->
+        <!-- ******Footer section****** -->
 
-  <footer class="new_footer_area bg_color">
-    <div class="new_footer_top">
-      <div class="container">
-        <div class="row" data-aos="fade-down">
-          <div class="col-lg-3 col-md-6">
-            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="
+        <footer class="new_footer_area bg_color">
+          <div class="new_footer_top">
+            <div class="container">
+              <div class="row" data-aos="fade-down">
+                <div class="col-lg-3 col-md-6">
+                  <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="
                   visibility: visible;
                   animation-delay: 0.2s;
                   animation-name: fadeInLeft;
                 ">
-              <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-              <p>Don’t miss any updates.</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
-                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" />
-                <button class="btn btn_get btn_get_two" type="submit">
-                  Subscribe
-                </button>
-                <p class="mchimp-errmessage" style="display: none"></p>
-                <p class="mchimp-sucmessage" style="display: none"></p>
-              </form>
-            </div>
-          </div>
-          <div class="footer-extra-links">
+                    <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                    <p>Don’t miss any updates.</p>
+                    <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                      <input type="text" name="EMAIL" class="form-control memail" placeholder="Email" />
+                      <button class="btn btn_get btn_get_two" type="submit">
+                        Subscribe
+                      </button>
+                      <p class="mchimp-errmessage" style="display: none"></p>
+                      <p class="mchimp-sucmessage" style="display: none"></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="footer-extra-links">
 
-          
-          <div class="col-lg-3 col-md-6">
-            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="
+
+                  <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="
                   visibility: visible;
                   animation-delay: 0.4s;
                   animation-name: fadeInLeft;
                 ">
-              <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-              <ul class="list-unstyled f_list">
-                <li><a href="#">EdgeLearn</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Instructors</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Payments</a></li>
-                <li><a href="#">Projects</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="
+                      <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                      <ul class="list-unstyled f_list">
+                        <li><a href="#">EdgeLearn</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Instructors</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Projects</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="
                   visibility: visible;
                   animation-delay: 0.6s;
                   animation-name: fadeInLeft;
                 ">
-              <h3 class="f-title f_600 t_color f_size_18">Help</h3>
-              <ul class="list-unstyled f_list">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Term &amp; conditions</a></li>
-                <li><a href="#">Reporting</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Support Policy</a></li>
-                <li><a href="#">Privacy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="
+                      <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                      <ul class="list-unstyled f_list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Term &amp; conditions</a></li>
+                        <li><a href="#">Reporting</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support Policy</a></li>
+                        <li><a href="#">Privacy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="
                   visibility: visible;
                   animation-delay: 0.8s;
                   animation-name: fadeInLeft;
                 ">
-              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-              <div class="f_social_icon">
-                <a href="#" class="fab fa-facebook"><i class="ri-facebook-fill"></i></a>
-                <a href="#" class="fab fa-twitter"><i class="ri-twitter-fill"></i></a>
-                <a href="#" class="fab fa-linkedin"><i class="ri-instagram-line"></i></a>
-                <a href="#" class="fab fa-pinterest"><i class="ri-linkedin-fill"></i></a>
+                      <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                      <div class="f_social_icon">
+                        <a href="#" class="fab fa-facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="fab fa-twitter"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="fab fa-linkedin"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="fab fa-pinterest"><i class="ri-linkedin-fill"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="footer_bg">
+              <div class="footer_bg_one"></div>
+              <div class="footer_bg_two"></div>
+            </div>
           </div>
-        </div>
-        </div>
-      </div>
-      <div class="footer_bg">
-        <div class="footer_bg_one"></div>
-        <div class="footer_bg_two"></div>
-      </div>
-    </div>
-  </footer>
+        </footer>
 
-  <script src="./js files/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 250,
-      duration: 700,
-    });
-  </script>
+        <script src="./js files/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 250,
+            duration: 700,
+          });
+        </script>
 </body>
 
 </html>
