@@ -1,25 +1,47 @@
-let typeBox = document.querySelector(".add-task input");
-let addBtn = document.querySelector(".add-task button");
-let task = document.querySelector(".tasks");
-
-let unImg = document.querySelector(".uncheck-img");
-let tsk = document.querySelector(".tsk");
-let cros = document.querySelector(".cros");
+let input = document.querySelector(".add-task input");
+let btn = document.querySelector(".add-task button");
+let ul = document.querySelector(".tasks");
+let img = document.createElement("img");
 let container = document.querySelector(".container");
- 
+let li = document.querySelector("li");
 
-addBtn.addEventListener("click", () => {
-    let div = document.createElement("div");
-    div.classList.add(".tasks")
+btn.addEventListener("click", () => {
 
-    div.append(unImg);
 
-    div.append(tsk);
+    if (input.value !== "") {
+        let li = document.createElement("li");
+        let uncheck = document.createElement("img");
+        let p = document.createElement("p");
+        let cros = document.createElement("img");
 
-    div.append(cros);
+        uncheck.src = "./img/unchecked.png";
+        cros.src = "./img/cross.png";
 
-    console.log(div.classList.contains(".tasks"));
+        li.classList.add("tsk")
+        p.classList.add("tsk-name")
+        uncheck.classList.add("uncheck-img");
+        cros.classList.add("cros");
 
-    container.append(div);
-    // console.log("halwa");
+        p.textContent = input.value;
+
+        li.append(uncheck);
+        li.append(p);
+        li.append(cros);
+        ul.append(li);
+
+        
+
+        // uncheck.addEventListener("click", () => {
+        //     li.remove();
+        // });
+    }
+    input.value = "";
+
+    ul.addEventListener("click", function(e) {
+    if (e.target.tagName == "li") {
+        // event.target.parentElement.remove();
+        console.log("clicked");
+    }
+});
 })
+
