@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1><%=title%></h1>
+    <h1><%=password%></h1>
+    <h1><%=email%></h1>
+
+    <div>
+        <div>
+            <form action="/register" method ="post">
+                <label for="chk" aria-hidden ="true" style="color: black;">Sign up</label>
+                <input type="text" name ="name" placeholder="UserName">
+                <input type="number" name ="number" placeholder="PhoneNumber">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name ="password" placeholder="Password">
+                <input type="password" name ="cpassword" placeholder="Confirm Password">
+                <button type="submit">Sign up</button>
+
+            </form>
+        </div>
+        <div>
+            <form action="/login" method ="post">
+                <label for="chk" aria-hidden="true" style="color: black;">Login</label>
+                <input type="email" name="email" placeholder="Email" required ="">
+                <input type="password" name="passoword" placeholder="password" required ="">
+                <button>Login</button>
+                                 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

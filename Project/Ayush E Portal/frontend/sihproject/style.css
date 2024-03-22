@@ -1,0 +1,436 @@
+/* CSS for the Navigation Bar */
+/* For smaller viewports (mobile) */
+*{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+   
+    font-weight: 500;
+    background-image: url(mainbg5.jpg);
+}
+@media (max-width: 767px) {
+    .navbar.bg-light {
+        background-color: #58e358;
+    }
+}
+/*css for background check box*/
+.verify{
+    background-image: url(mainbg5.jpg);
+    margin-left:30px;
+    margin-bottom:30px;
+    border:3px solid black;
+    box-shadow:10px 10px 20px black;
+}
+/* For larger viewports (desktop) */
+@media (min-width: 768px) {
+    .navbar.bg-light {
+        background-color: hsl(144, 80%, 49%); 
+    }
+}
+hr{
+    text-shadow: 5px 5px 2px black;
+}
+.maincontent{
+    font-size: 27px;
+    text-align: center;
+    color:#007864;
+    text-shadow: 1px 1px 2px black;
+}
+.content{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left:25px;
+    text-shadow: 1px 1px brown;
+}
+.nav-link{
+    font-size: 20px;
+}
+
+/* CSS for Menu Items on Hover */
+.navbar-nav .nav-item .nav-link:hover {
+    color: brown;
+}
+.login:hover{
+    color:goldenrod;
+
+}
+.member:hover{
+    color:goldenrod;
+}
+.centered-slider {
+    display: flex;
+    justify-content: center; /* Center the slider horizontally */
+    align-items: center; /* Center the slider vertically */
+    height: 70vh;
+}
+.slider-livechat{
+    display:block;
+}
+
+
+/* Style for the slider container */
+.slider-container {
+    width: 100%; /* Set a percentage width for responsiveness */
+    max-width: 1200px; /* Set a maximum width */
+    height: 550px; /* Remove fixed height */
+    overflow: hidden;
+    margin-top:200px;
+    margin-bottom: 200px;
+    background-image: url(mainbg5.jpg);
+    background-color: hsl(144, 80%, 49%);
+    border-radius: 5px;
+    box-shadow: 11px 11px 30px 2px hsla(30, 8%, 5%, 0.9);
+    padding: 15px;
+}
+/* Style for the slides */
+.carousel-item {
+    width: 100%; /* Set the width to 100% to match the container */
+    max-height: 1000px; /* Adjust the maximum height as needed */
+    border-radius: 3px;
+    box-shadow: 11px 11px 30px 2px hsla(30, 8%, 5%, 0.9);
+    
+}
+.wider-image {
+    width: 150%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+}
+.img-fluid{
+    box-shadow: 5px 5px 20px black;
+}
+
+.grid-box {
+    background-color: hsl(110, 81%, 85%); /* Background color */
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 10px; /* Border radius */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px; /* Margin between boxes */
+    width: 330px; /* Fixed width for the boxes */
+            height: 500px;
+    text-align: center; /* Center text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Box shadow */
+    transition: 1s;
+}
+.grid-box:hover{
+    background-color: hwb(151 25% 31%);
+}
+
+/* Style for the circular image */
+.circular-image {
+    border-radius: 50%; /* Create a circular shape */
+    max-width: 100px; /* Set the maximum width of the image */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto 10px; /* Add space below the image */
+}
+h2{
+    text-align: center;
+    text-shadow: 1px 1px rgb(7, 7, 7);
+
+}
+.apply-button {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Button border radius */
+    padding: 10px 20px; /* Button padding */
+    text-align: center;
+    display: block; /* Center the button horizontally */
+    margin: 10px auto 0; /* Add space above the button */
+    text-decoration: none; /* Remove underlines from links */
+}
+.apply-button:hover{
+    background-color: hsl(204, 80%, 74%);
+}
+.footer {
+    background-image: url(mainbg5.jpg);
+    background-color: hsl(110, 81%, 85%); /* Footer background color */
+    color: hsl(0, 18%, 10%); /* Text color */
+    padding: 30px 0; /* Padding at the top and bottom of the footer */
+}
+
+/* Style for social media icons */
+.social-icons {
+    font-size: 24px; /* Icon size */
+    margin-right: 15px;
+    margin-left: 10px; /* Spacing between icons */
+}
+
+/* Style for footer links */
+.footer-links {
+    color: hsl(0, 7%, 3%); /* Link text color */
+    text-decoration: none; /* Remove underlines from links */
+    margin-right: 20px; /* Spacing between links */
+}
+.login-form {
+    max-width: 400px; /* Set the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 10px; /* Add some padding inside the form */
+    /* Form background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Box shadow */
+    height:550px;
+    background-color: hsl(110, 81%, 85%);
+    padding-top:10px;
+}
+
+/* Style for form labels */
+label {
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #00A98F; /* Button background color */
+    border: none; /* Remove button border */
+}
+
+.btn-primary:hover {
+    background-color: #007864; /* Button background color on hover */
+}
+.container{
+    width:1800px;
+    height:600px;
+    
+    background-image: url(white.jpg);
+    box-shadow: 5px 5px 20px 1px black;
+    margin-top:20px;
+}
+.boxx{
+    box-shadow: 2px 2px 5px black;
+    width:380px;
+    background-color: hsl(174, 80%, 81%);
+    height:450px;
+    display:inline-block;
+    margin-left:20px;
+    padding:5px;
+}
+.num{
+    border-radius: 50%;
+    background-color: #9fe0cb;
+    padding:17px;
+    box-shadow: 1px 1px 1px black;
+}
+.box-inline{
+    margin-left:200px;
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+}
+.chat-container {
+    background-image: url(bgg.jpg);
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-top:0px;
+    margin-bottom:50px;
+}
+/* Style for the chat messages */
+.chat-messages {
+    list-style-type: none;
+    padding: 0;
+}
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* Style for the chat input */
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.startup-container {
+    background-image: url('blakish.jpg'); /* Replace 'background-image.jpg' with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Set the height of the container to the viewport height */
+    display: inline-block;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    
+}
+ /* Style for the vector image */
+ .vector-image {
+    padding:20px;
+    max-width: 50%; /* Adjust the maximum width as needed */
+    height: auto;
+    float:left;
+
+}
+
+/* Style for the heading */
+.startup-heading {
+    color: white; /* Text color */
+    font-size: 45px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add margin below the text */
+    padding-left:40px ;
+    padding-top:0px;
+    text-shadow: 1px 1px 2px aquamarine;
+}
+.subhead{
+    color: white; /* Text color */
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add margin below the text */
+    padding-left:100px ;
+    padding-top:230px;
+
+
+}
+
+/* Style for the buttons */
+.startup-button {
+    font-size:30px;
+    font-weight:600;
+    text-shadow: 1px 1px 1px black;
+    width:300px;
+    height:70px;
+    padding:13px;
+    margin: 5px;
+}
+.investor-container {
+    background-image: url('invest.jpg'); /* Replace 'background-image.jpg' with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Set the height of the container to the viewport height */
+    display: inline-block;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    
+}
+.investor-button {
+    font-size:30px;
+    font-weight:600;
+    text-shadow: 1px 1px 1px black;
+    width:700px;
+    height:70px;
+    padding:13px;
+    margin: 5px;
+}
+.section-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    padding-left:90px;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(173, 202, 241);
+}
+
+.section-image {
+    max-width: 100px;
+    margin-right: 20px;
+}
+.connect-container {
+    background-image: url('cont.jpg'); /* Replace 'background-image.jpg' with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Set the height of the container to the viewport height */
+    display: inline-block;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    
+}
+.connect-button {
+    font-size:30px;
+    font-weight:600;
+    text-shadow: 1px 1px 1px black;
+    width:300px;
+    height:70px;
+    padding:13px;
+    margin: 5px;
+}
+.connect-button:hover{
+    background-color: #68e8b7;
+}
+.containers{
+    display:flex;
+    justify-content: 40px;
+}
+.tweet {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Add space between the two tweets */
+    margin-bottom: 20px; /* Add margin to separate them vertically */
+    max-width: 100%; /* Ensure they don't exceed the container width */
+    margin-left: 90px;
+    margin-right:60px;
+    box-shadow: 5px 5px 20px black;
+    background-image: url(white.jpg);
+    
+}
+
+.twitter-tweet {
+    flex: 1; /* Allow each tweet to grow equally within the flex container */
+    margin-right: 0px; /* Add some spacing between the tweets */
+}
+
+
+
+
+.selectable-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    transition: aqua 0.3s;
+    width:750px;
+    height:150px;
+
+}
+
+.selected-box {
+    border-color: #007bff; /* Change border color when selected */
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    background-image: url();
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+.boxx-content {
+    flex: 0.8; /* Allow content to expand to fill available space */
+    padding-left:5px;
+}
+
+.box-icon {
+    display: none; /* Initially hide the icon */
+    color: #007bff;
+}
+
+.selectable-box.selected .box-icon {
+    display: inline-block; /* Show the icon when selected */
+}
+.flexx{
+    display:flex;
+    margin-left:25px;
+}
+.selection{
+    width:fit-content;
+    height:fit-content;
+    box-shadow: 5px 5px 20px black;
+}
+
+
+
+
+
+
+
+
