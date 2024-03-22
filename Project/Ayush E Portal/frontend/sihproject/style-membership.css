@@ -1,0 +1,175 @@
+/* Reset some default styles */
+* {
+    /* background-color: lightblue; */
+  }
+  body,
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-image: url(gru.jpg);
+  }
+  body {
+    /* background-image: url(../greenbg.webp); */
+    /* background-color: lightblue; */
+    background-image: url(../white.jpg);
+  }
+  h1 {
+    /* background-color: orange; */
+    font-weight: bold;
+    font-size: 50px;
+  }
+  /* Style for the testimonials section */
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+  
+  /* Style for individual testimonials */
+  .testimonial {
+    background-color: lightgreen;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 0 calc(50% - 20px); /* Adjust the width of each testimonial */
+    /* flex: 0 0 calc(33.33% - 20px); / / If you want three testimonials per row */
+  }
+  
+  /* Style for the paragraphs within the testimonials */
+  .first-para, .second-para {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  /* Add media queries for responsive design if needed */
+  
+  }
+  h2 {
+    font-size: 30px;
+  }
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  .first-para {
+    border: 5px solid black;
+    padding: 10px;
+    font-size: 30px;
+    box-shadow: 5px 5px 5px black
+    /* background-color: lightblue; */
+  }
+  .second-para {
+    border: 5px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+    /* background-color: lightgreen; */
+    font-size: 20px;
+  }
+  .t{
+    font-size:50px;
+    margin-left:100px;
+    text-decoration: underline;
+  }
+  /* Style the membership options */
+  .membership-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 30px;
+    background-color: lightgreen;
+    box-shadow: 5px 5px 20px black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+  .a {
+    /* border-style: groove; */
+    margin-left: 75px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 100px;
+    margin-right: 80px;
+  }
+  .b {
+    margin-left: 200px;
+    font-weight: bold;
+    font-size: 90px;
+    text-decoration: underline;
+    font-style:italic;
+  }
+  
+  .membership-tier {
+    border: 1px solid #ccc;
+    padding: 40px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 200px;
+    justify-content: space-around;
+  }
+  
+  .membership-tier h2 {
+    font-size: 24px;
+    background-color: orange;
+  }
+  .x {
+    margin-left: 1050px;
+  }
+  .z {
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-right: 100px;
+  }
+  .membership-tier p {
+    font-size: 16px;
+  }
+  
+  .join-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .join-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the testimonials section */
+  .testimonials {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: lightgreen;
+  }
+  
+  .testimonial {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-image:url(white.jpg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: lightgreen;
+    color: lightgreen;
+    text-align: center;
+    padding: 10px;
+  }
