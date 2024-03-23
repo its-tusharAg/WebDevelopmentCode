@@ -44,5 +44,8 @@ let dirPath = path.join(__dirname, "files")
 // to get/print file name
 
 fs.readdir(dirPath, (err, file) =>{
-    console.log(file);
+    // console.log(file);
+    file.forEach((item) => {
+        console.log(item);
+    })
 })
