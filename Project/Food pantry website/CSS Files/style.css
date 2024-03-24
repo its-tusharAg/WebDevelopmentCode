@@ -1,0 +1,56 @@
+@import url(./utlality.css);
+
+:root {
+    --primary: #ff6041;
+    --secondary: #002438;
+    --ternary: #54595f;
+    --light-yellow: #ffedd9;
+    --dark: #000000;
+    --pure: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 570px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
