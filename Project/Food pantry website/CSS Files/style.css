@@ -54,3 +54,9 @@ html {
         max-width: 1152px;
     }
 }
+
+/* nav bar code */
+section.nav-section .nav-logo img{
+    /* scale: 0.4; */
+    height: 100px;
+}
