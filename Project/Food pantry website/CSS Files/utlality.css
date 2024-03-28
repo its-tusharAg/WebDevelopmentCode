@@ -2,12 +2,34 @@
     display: flex;
 }
 
-.itemCenter {
+.align-center {
     align-items: center;
+}
+
+.align-top {
+    align-items: start;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex1 {
+    flex: 1;
 }
 
 .btn {
@@ -25,23 +47,20 @@
     background-color: var(--primary);
     color: var(--dark);
 }
+
 .btn-primary:hover {
     background-color: transparent;
     border-color: var(--primary);
     color: var(--primary);
 }
+
 .btn-secondary {
     background-color: transparent;
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: var(--pure);
+    color: var(--pure);
 }
+
 .btn-secondary:hover {
-    background-color: var(--primary);
-    color: var(--dark); 
-}
-.flex1 {
-    flex: 1;
-}
-.justify-center{
-    justify-content: center;
+    background-color: var(--pure);
+    color: var(--dark);
 }
