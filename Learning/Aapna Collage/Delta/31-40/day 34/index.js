@@ -3,10 +3,12 @@ const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
 const {v4: uuidv4} = require("uuid");
+const methodOverride = require("method-override");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
+app.use(methodOverride("_method"));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -57,3 +59,33 @@ app.post("/posts", (req, res) => {
     posts.push({id, username, content});
     res.redirect("/posts");
 });
+
+// PATCH: to update post
+app.patch("/posts/:id", (req, res) => {
+    let {id} = req.params;
+    // let newUsername = req.body.username;
+    let newContent = req.body.content;
+    // console.log(newUsername);
+    // console.log(id);
+    let post = posts.find((p) => id === p.id)
+    // post.username = newUsername;
+    post.content = newContent;
+    console.log(post);
+    // res.send("Working fine");
+    res.redirect("/posts");
+})
+
+//creating edit path
+app.get("/posts/:id/edit", (req, res) => {
+    let {id} = req.params;
+    let post = posts.find((p) => id === p.id)
+    res.render("editPost.ejs", {post});
+})
+
+//delete route to delte post
+app.delete("/posts/:id", (req, res) => {
+    let {id} = req.params;
+    posts = posts.filter((p) => id !== p.id);
+    // res.send("Deleted");
+    res.redirect("/posts");
+})
