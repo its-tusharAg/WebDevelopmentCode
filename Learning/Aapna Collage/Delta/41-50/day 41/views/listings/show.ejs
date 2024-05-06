@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderlist</title>
+</head>
+<body>
+    
+    <p>Title: <%= listing.title %></p>
+    <p>Description: <%= listing.description %></p>
+    <img src="<%=listing.image.url %>" alt="" height="200px">
+    <p>Price: <%= listing.price.toLocaleString("en-IN") %></p>
+    <p>location: <%= listing.location %></p>
+    <p>Country: <%= listing.country %></p>
+
+    <form action="<%=listing._id%>/edit" method="get">
+        <button>Edit</button>
+    </form><br><br>
+    <form action="<%=listing._id%>?_method=delete" method="post">
+        <button>delete</button>
+    </form>
+</body>
+</html>
