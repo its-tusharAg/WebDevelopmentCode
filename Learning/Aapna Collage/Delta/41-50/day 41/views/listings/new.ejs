@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New form</title>
-</head>
+<%- layout("/layouts/boilerplate.ejs") %>
 <body>
     <h3>Add new Listing</h3>
     <form action="/listings" method="post">
+        <div>
+            
+        </div>
         <input type="text" name="listing[title]" placeholder="Enter Your title"> <br><br>
         <textarea name="listing[description]" placeholder="Enter Discreaption"></textarea> <br><br>
         <input type="url" name="listing[image]" placeholder="Image URL"> <br><br>
@@ -17,4 +14,3 @@
         <button type="submit">Submit</button> <br>
     </form>
 </body>
-</html>
