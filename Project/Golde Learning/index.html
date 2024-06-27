@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power BI</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="yellow-bg">
+        <section class="nav-section">
+          <nav class="nav-bar">
+            <div class="nav-logo logo1">
+              <img src="./img/durga and kunj logo.png" alt="" />
+            </div>
+            <div class="nav-list">
+              <ul>
+                <li class="nav-li">PROJECTS</li>
+                <li class="nav-li">OUTCOMES</li>
+                <li class="nav-li">FEE STRUCTURE</li>
+                <li class="nav-li">CERTIFICATION</li>
+              </ul>
+            </div>
+            <!-- <div class="nav-logo logo2">
+            <img src="./img/durgadevi_logo-removebg-preview.png" alt="" />
+          </div> -->
+          </nav>
+        </section>
+        <!-- hero section -->
+        <section class="hero-section">
+          <div class="hero">
+            <div class="hero-left">
+              <h1>Power BI Certification Course</h1>
+              <p>
+                Get ready to crack the PL-300 exam and become a
+                Microsoft®-certified Power BI Data Analyst! Ace the exam with
+                confidence and master the art of data analytics. No prior Power
+                BI knowledge required.
+              </p>
+              <ul>
+                <li>Comprehensive curriculum</li>
+                <li>For students, freshers, and professionals</li>
+                <li>Practice tests included</li>
+                <li>Exam readiness in 4-day training (Sat/ Sun)</li>
+              </ul>
+            </div>
+            <div class="hero-right">
+              <div class="wrapper">
+                <div class="form signup">
+                  <form action="#">
+                    <input type="text" placeholder="Full name" required />
+                    <input type="text" placeholder="Email address" required />
+                    <input type="tel" placeholder="Mobile Number" required />
+                    <select class="course" placeholder="Course">
+                      <option value="">Course</option>
+                      <option value="Power BI Basic">Power BI Basic</option>
+                      <option value="Power BI Intermediate">
+                        Power BI Intermediate
+                      </option>
+                      <option value="Power BI Advanced">
+                        Power BI Advanced
+                      </option>
+                    </select>
+                    <input
+                      type="text"
+                      placeholder="Education Qualification"
+                      required
+                    />
+                    <input type="text" placeholder="Work Experience" required />
+                    <input type="text" placeholder="City" required />
+
+                    <select class="country" name="country-state">
+                      <option value="">Select state</option>
+                      <option value="AN">Andaman and Nicobar Islands</option>
+                      <option value="AP">Andhra Pradesh</option>
+                      <option value="AR">Arunachal Pradesh</option>
+                      <option value="AS">Assam</option>
+                      <option value="BR">Bihar</option>
+                      <option value="CH">Chandigarh</option>
+                      <option value="CT">Chhattisgarh</option>
+                      <option value="DN">Dadra and Nagar Haveli</option>
+                      <option value="DD">Daman and Diu</option>
+                      <option value="DL">Delhi</option>
+                      <option value="GA">Goa</option>
+                      <option value="GJ">Gujarat</option>
+                      <option value="HR">Haryana</option>
+                      <option value="HP">Himachal Pradesh</option>
+                      <option value="JK">Jammu and Kashmir</option>
+                      <option value="JH">Jharkhand</option>
+                      <option value="KA">Karnataka</option>
+                      <option value="KL">Kerala</option>
+                      <option value="LA">Ladakh</option>
+                      <option value="LD">Lakshadweep</option>
+                      <option value="MP">Madhya Pradesh</option>
+                      <option value="MH">Maharashtra</option>
+                      <option value="MN">Manipur</option>
+                      <option value="ML">Meghalaya</option>
+                      <option value="MZ">Mizoram</option>
+                      <option value="NL">Nagaland</option>
+                      <option value="OR">Odisha</option>
+                      <option value="PY">Puducherry</option>
+                      <option value="PB">Punjab</option>
+                      <option value="RJ">Rajasthan</option>
+                      <option value="SK">Sikkim</option>
+                      <option value="TN">Tamil Nadu</option>
+                      <option value="TG">Telangana</option>
+                      <option value="TR">Tripura</option>
+                      <option value="UP">Uttar Pradesh</option>
+                      <option value="UT">Uttarakhand</option>
+                      <option value="WB">West Bengal</option>
+                    </select>
+
+                    <input type="submit" class="submit" value="APPLY" />
+                  </form>
+                </div>
+
+                <script>
+                  const wrapper = document.querySelector(".wrapper"),
+                    signupHeader = document.querySelector(".signup header"),
+                    loginHeader = document.querySelector(".login header");
+
+                  loginHeader.addEventListener("click", () => {
+                    wrapper.classList.add("active");
+                  });
+                  signupHeader.addEventListener("click", () => {
+                    wrapper.classList.remove("active");
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <!-- scrolling text -->
+      <div class="marquee marquee--3">
+        <p class="marquee__item" width="150" height="150">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <p class="marquee__item" width="150" height="150">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <p class="marquee__item" width="150" height="150">
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+
+      <!-- what will you learn -->
+      <section class="what-learn-section">
+        <div class="content">
+          <h2>What You Will Learn ?</h2>
+          <h3>Certification Training Program</h3>
+          <p>
+            Become a Power BI expert by working on real-world case studies with
+            industry proficient :
+          </p>
+
+          <p></p>
+          <ul class="checklist">
+            <li>
+              Master Data Visualizations, Reports, Charts & Maps through
+              Real-World Projects
+            </li>
+            <li>
+              Create interactive dashboards with custom visuals and advanced
+              analytics
+            </li>
+            <li>
+              Develop expertise in DAX (Data Analysis Expressions) for complex
+              data manipulation
+            </li>
+            <li>
+              Building comprehensive data models with multiple relationships in
+              Power BI.
+            </li>
+            <li>
+              Understand how to share & collaborate on reports using Power BI
+              Cloud.
+            </li>
+          </ul>
+        </div>
+        <div class="content-img">
+          <img src="./img/pink_graph.png" alt="" />
+        </div>
+      </section>
+
+      <!-- courses -->
+
+      <section class="courses-section">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-top">
+              <img src="./img/book icon.png" alt="Logo 1" class="card-logo" />
+              <div class="card-content">
+                <h2>Power BI Basic 20 hrs of live sessions</h2>
+              </div>
+            </div>
+            <div class="price">Price: $100</div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <img src="./img/book icon.png" alt="Logo 2" class="card-logo" />
+              <div class="card-content">
+                <h2>Power BI Intermediate 20 hrs of live sessions</h2>
+              </div>
+            </div>
+            <div class="price">Price: $200</div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <img src="./img/book icon.png" alt="Logo 3" class="card-logo" />
+              <div class="card-content">
+                <h2>Power BI Advanced 20 hrs of live sessions</h2>
+              </div>
+            </div>
+            <div class="price">Price: $300</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- course details -->
+
+      <section class="detail-section">
+        <div class="course-details">
+          <div class="detail-headline">
+            <h2>Whats in the course?</h2>
+          </div>
+          <div class="detail-project detail-block">
+            <div class="detail-project-left">
+              <h3>Hands-On Projects</h3>
+              <p>
+                The course includes several hands-on projects designed to
+                provide practical experience. These projects encompass a variety
+                of real-world scenarios such as:
+              </p>
+              <ul>
+                <li>
+                  Data transformation and cleaning using the Query Editor in
+                  Power BI.
+                </li>
+                <li>
+                  Building comprehensive data models with multiple
+                  relationships.
+                </li>
+                <li>
+                  Creating interactive dashboards with custom visuals & advanced
+                  analytics.
+                </li>
+                <li>
+                  Integrating Python scripts for data transformation and
+                  visualization.
+                </li>
+              </ul>
+            </div>
+            <div class="detail-project-right">
+              <img src="./img/Data anal img/Data analysis-pana 1.png" alt="" />
+            </div>
+          </div>
+          <div class="course-modules detail-block">
+            <div class="module-left">
+              <img src="./img/Data anal img/Data report-bro.png" alt="" />
+            </div>
+            <div class="module-right">
+              <h3>Live Course Modules</h3>
+              <ul>
+                <li>Module 1: Power BI Introduction</li>
+                <li>Module 2: Power BI Interface</li>
+                <li>Module 3: Power Query</li>
+                <li>Module 4: Connectivity</li>
+                <li>Module 5: Data transformation using Power Query</li>
+                <li>Module 6: Data Modelling</li>
+                <li>Module 7: DAX (Data Analysis Expressions)</li>
+                <li>Module 8: Visualization</li>
+                <li>Module 9: Publishing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="growth-path detail-block">
+            <div class="growth-left">
+              <h3>Career Growth Path:</h3>
+              <ul>
+                <li>
+                  Power BI Developer, Data Analyst, Senior Analyst, Data
+                  Scientist, Data Visualization Specialist, Business
+                  Intelligence Manager.
+                </li>
+                <li>
+                  Specialize in specific areas like financial analysis,
+                  marketing analytics, or healthcare analytics.
+                </li>
+                <li>
+                  Build a successful career in data-driven decision-making.
+                </li>
+              </ul>
+            </div>
+            <div class="growth-right">
+              <img src="./img/Data anal img/Data report-pana.png" alt="" />
+            </div>
+          </div>
+
+          <div class="course-outcome detail-block">
+            <div class="outcome-left">
+              <img src="./img/Data anal img/Data report-rafiki.png" alt="" />
+            </div>
+            <div class="outcome-right">
+              <h3>Course Outcomes</h3>
+              <ul>
+                <li>Gain hands-on experience with all Power BI features.</li>
+                <li>
+                  Develop skills to become a confident data analyst and
+                  storyteller.
+                </li>
+                <li>
+                  Stand out in the job market with coveted Power BI expertise.
+                </li>
+                <li>Secure high-demand positions in various industries.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-section">
+        <div class="transition-col">
+          <h2>Power BI Career Transition</h2>
+          <ul>
+            <li>40 % Average Salary Hike</li>
+            <li>12000 + Career Transition</li>
+            <li>300 + Hiring Partners</li>
+          </ul>
+        </div>
+
+        <!-- note -->
+        <div class="note">
+          <p>
+            <span>Note:</span> Course completion certifications will be provided
+            after completion of course and projects successfully.
+          </p>
+        </div>
+
+        <!-- Enroll  -->
+        <div class="enroll">
+          <p>
+            <span>Enroll now</span> to unlock the full potential of
+            <span>Power BI</span> and take the next step in your data analytics
+            career!
+          </p>
+          <button class="btn">Enquire Now</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-section">
+        <div class="ft-left-right">
+          <div class="ft-left">
+            <img src="./img/durga and kunj logo.png" alt="" />
+          </div>
+          <div class="ft-right">
+            <p>
+              <span>Address:</span><br />
+              Kunjbihari S. Goyal Online Academy (GOLD Academy) <br />
+              RSET Campus <br />
+              S V Road, Malad (West), <br />
+              Mumbai 400064, Maharashtra, INDIA
+            </p>
+          </div>
+        </div>
+        <div class="ft-reserved">
+            <p>
+                © Copyright 2024 Kunjbihari S. Goyal Online Academy for Learning and Development (GOLD Academy) | All Rights Reserved.
+            </p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
