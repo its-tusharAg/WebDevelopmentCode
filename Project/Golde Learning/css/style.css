@@ -37,14 +37,43 @@ h2 {
     font-family: "DM Serif Display", serif;
     font-size: 45px;
 }
-
+/* 
 .yellow-bg {
     height: 90vh;
     background-color: var(--primary-light);
-    z-index: -1;
-    /* width: 100vh; */
-    /* padding-left: 2rem; */
-    /* min-width: 100%; */
+ 
+    background-image: url("../img/bg-girl-img.png"); 
+    background-size:auto; 
+    background-position:left; 
+    background-repeat: no-repeat; 
+} */
+.yellow-bg {
+    position: relative;
+    height: 90vh;
+    /* background-color: var(--primary-light); */
+    overflow: hidden; /* Ensure the ::after element doesn't overflow */
+}
+
+.yellow-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* left: 9rem; */
+    /* right: 24r   em; */
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-temp.png"); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: right; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    opacity: 0.7; /* Adjust the opacity value as needed */
+    z-index: 0; /* Ensure it's behind the content */
+}
+
+.yellow-bg .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background image */
+    /* Add any other styling for your content here */
 }
 
 .yellow-bg .nav-section .nav-bar {
@@ -57,6 +86,7 @@ h2 {
 
 .nav-section .nav-bar .nav-list {
     margin-top: 1rem;
+    z-index: 100;
 }
 
 .nav-section .nav-bar ul {
@@ -73,6 +103,7 @@ h2 {
     padding: 0 0.5rem;
     border-radius: 8px;
     box-shadow: 0px 0px 4px var(--primary);
+    z-index: 100;
 }
 
 .nav-logo img {
@@ -82,14 +113,17 @@ h2 {
 /* hero page */
 section.hero-section {
     margin: 3rem;
+    z-index: 100;
 }
 
 section.hero-section .hero {
     display: flex;
+    /* z-index: 100; */
 }
 
 section.hero-section .hero .hero-left {
     width: 50%;
+    z-index: 100;
 }
 
 section.hero-section .hero .hero-left h1 {
@@ -103,11 +137,13 @@ section.hero-section .hero .hero-left p {
     font-size: 16px;
     color: #3d3d3d;
     margin-top: 1rem;
+    width: 90%;
 }
 
 section.hero-section .hero .hero-left ul {
     position: relative;
     margin-top: 2rem;
+    z-index: 100;
 }
 
 section.hero-section .hero .hero-left ul li {
@@ -316,6 +352,7 @@ form input[type="submit"] {
     display: inline-block;
     font-size: large;
     color: gray;
+    /* color: black; */
     font-size: 1.5rem;
     margin: 0 2.5rem;
 }
@@ -557,7 +594,7 @@ form input[type="submit"] {
 
 .course-details .growth-path .growth-left {
     width: 50%;
-    margin: 7rem;
+    /* margin: 7rem; */
 }
 
 .course-details .growth-path .growth-left h3 {
@@ -587,7 +624,6 @@ form input[type="submit"] {
 
 .course-details .growth-path .growth-right img {
     height: 700px;
-    border: 9px solid red;
 }
 
 .course-outcome {
@@ -1013,6 +1049,10 @@ form input[type="submit"] {
         width: 90%;
     }
 
+    .logos-slide {
+        animation: slide 30s linear infinite;
+    }
+
     .detail-section .course-details .detail-project .detail-project-left {
         width: 90%;
     }
@@ -1081,11 +1121,17 @@ form input[type="submit"] {
         font-size: 40px;
     }
 
+
+
 }
 
 @media (max-width: 450px) {
     .yellow-bg {
         height: auto;
+    }
+
+    .logos-slide {
+        animation: slide 15s linear infinite;
     }
 
     .yellow-bg .nav-section .nav-bar {
@@ -1126,6 +1172,10 @@ form input[type="submit"] {
 
     .wrapper {
         width: 120%;
+    }
+
+    .ft-left-right .ft-right p {
+        width: 80%;
     }
 
     .what-learn-section {
@@ -1192,6 +1242,13 @@ form input[type="submit"] {
 
     .checklist li {
         font-size: 13px;
+    }
+
+    .transition-col h2 {
+        /* color: var(--primary); */
+        /* margin-left: 1rem; */
+        text-align: center;
+
     }
 
     p {
